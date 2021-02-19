@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xsetwacom --set "Tablet Monitor Pen stylus" MapToOutput "DisplayPort-0"
+xsetwacom set "Tablet Monitor Pen stylus" Button 2 "key +space"

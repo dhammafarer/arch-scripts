@@ -1,0 +1,47 @@
+data.location=~/.task
+include ~/arch-scripts/dotfiles/.xres/themes/task-arc.theme
+
+report.in.columns           = id,description
+report.in.description       = Inbox
+report.in.filter            = status:pending limit:page (+in)
+report.in.labels            = ID,Description
+
+report.n.description        = Most urgent task
+report.n.columns            = description
+report.n.filter             = status:pending and +next
+report.n.sort               = brainpower-,priority-,urgency-
+report.n.labels             = Description
+
+report.i.description        = Next task id
+report.i.columns            = id
+report.i.filter             = status:pending and +next
+report.i.labels             = ID
+
+report.a.description        = Active task
+report.a.columns            = description
+report.a.filter             = start:now limit:1
+report.a.sort               = brainpower-,priority-,urgency-
+report.a.labels             = Description
+
+uda.brainpower.type=string
+uda.brainpower.label=Brainpower
+uda.brainpower.values=H,M,L
+uda.brainpower.default=M
+
+#server
+taskd.server=freecinc.com:53589
+taskd.key=\/home\/pawel\/Sync\/Apps\/task\/freecinc_196d860c.key.pem
+taskd.certificate=\/home\/pawel\/Sync\/Apps\/task\/freecinc_196d860c.cert.pem
+taskd.ca=\/home\/pawel\/Sync\/Apps\/task\/freecinc_196d860c.ca.pem
+taskd.credentials=FreeCinc\/freecinc_196d860c\/5689e290-890f-4b83-a1ec-b45088fa56b5
+
+context.work=+@office or +@work
+context.home=+@home or +@piano
+context.music=+@music or +@piano
+context.office=-@home -@piano -diy -ideas -self
+context.self=+self
+context.ideas=+ideas
+context.learn=+learn
+context.trip=pro:trip
+context.shop=+shop
+context.diy=+diy

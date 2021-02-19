@@ -1,0 +1,47 @@
+#!/bin/sh
+# Script to configure X, start common apps, and start xmonad.
+# Author: Vic Fryzel
+# https://github.com/vicfryzel/xmonad-config
+
+
+# Configure PATH so that we can access our scripts below
+#PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+
+# Configure X
+#xsetroot -cursor_name left_ptr &
+#xrdb -merge ~/.Xdefaults &
+#xmodmap ~/.xmodmap
+#setxkbmap -option "ctrl:nocaps" &
+
+# disable beep
+setterm -blength 0
+
+# mate
+mate-session &
+ibus-daemon &
+
+# Start a window compositor. This ensures Google Chrome paints correctly.
+#xcompmgr -n &
+compton -b &
+
+# Set a wallpaper
+#feh --bg-fill ~/.wallpaper.jpg &
+
+# Start the system tray
+stalonetray -c ~/.xmonad/stalonetrayrc-single &
+
+# startup applications
+kupfer &
+mate-terminal &
+google-chrome-stable &
+pidgin &
+thunderbird &
+
+# Start screensaver
+killall mate-screensaver &
+xscreensaver -no-splash &
+
+# Start sound server
+pulseaudio --start --log-target=syslog &
+
+#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad

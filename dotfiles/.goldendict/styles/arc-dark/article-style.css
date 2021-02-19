@@ -1,0 +1,543 @@
+body {
+  padding: 0.3%;
+  background: #2f343f;
+  color: #e6e6e6;
+  font-family: Ubuntu Regular, Noto Sans CJK TC, Noto Sans CJK SC;
+  font-size: 0.9rem;
+}
+
+a:link {
+  color: #b5bd68;
+}
+
+ul {
+  color: #e6e6e6;
+}
+
+.gdarticle {
+  background: #2f343f;
+  line-height: 1.6;
+  color: white;
+  margin: 8px;
+  padding: 2% 2%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.gdactivearticle {
+  border: 1px solid #5294e2;
+}
+
+.gddicttitle {
+  color: #b8bdc2 !important;
+}
+
+/* headword */
+h3:first-child,
+div.dsl_headwords p {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 1.2rem !important;
+  color: #5de489 !important;
+  font-weight: 500;
+  letter-spacing: 1.2;
+  text-transform: uppercase;
+}
+
+/* program plaintext */
+
+div.programs_plaintext {
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* headword styling */
+div.programs_plaintext div:first-child {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5294e2;
+  line-height: 1.4;
+}
+/* phonetics styling */
+div.programs_plaintext div:nth-child(2) {
+  margin: 0;
+  margin-top: -4px;
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #cc6666;
+  line-height: 1.3;
+}
+
+.gdarticleseparator + script + .gdactivearticle .gddictname {
+  border-top: 0px solid #5294e2;
+}
+
+.gdarticleseparator {
+  display: none;
+}
+
+.gddictname {
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  padding: 4px 4px 4px 8px;
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.gdactivearticle .gddictname {
+  font-weight: normal;
+}
+
+.gddicticon {
+  display: none;
+}
+
+.gdfromprefix {
+  display: none;
+}
+
+.collapse_expand_area {
+  width: 17px;
+  height: 18px;
+}
+
+.collapse_expand_area > img {
+  margin-left: 0px;
+  /* display: none; */
+  opacity: 0;
+}
+
+.collapse_expand_area::after {
+  content: '  ';
+  position: relative;
+  left: -8px;
+  pointer-events: none;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10.4px 6px 0 6px;
+  border-color: #5294e2 transparent transparent transparent;
+}
+
+/**
+ * Old Dictionaries using DSL format
+ */
+.gdarticlebody > span:first-child .dsl_headwords,
+.gdarticlebody > h3:first-child {
+  margin-top: -3px;
+  display: inline-block;
+}
+
+.gdspellsuggestion {
+  /* Add some vertical space before the article */
+  margin-top: 1.5em;
+}
+
+.dsl_article,
+.dsl_definition,
+.dsl_ex,
+.dsl_opt,
+.dsl_lang,
+.dsl_m0,
+.dsl_m1,
+.dsl_m2,
+.dsl_m3,
+.dsl_m4,
+.dsl_u,
+.dsl_b,
+.dsl_i {
+  color: #e6e6e6 !important;
+}
+
+.dsl_p {
+  color: #cc6666 !important;
+}
+
+.dsl_b font {
+  color: #ffd300 !important;
+}
+
+.dsl_m2 font {
+  color: #5de489 !important;
+}
+
+.dsl_i font {
+  color: white !important;
+}
+
+.dsl_article .dsl_definition {
+  color: #f0c674 !important;
+}
+
+.dsl_article .dsl_definition font[color='darkcyan'] {
+  color: #f0c674 !important;
+}
+
+.dsl_article .dsl_definition font[color='teal'] {
+  color: #f0c674 !important;
+}
+
+.dsl_article .dsl_definition font[color='darkslategray'] {
+  color: #b294bb !important;
+}
+
+.dsl_article .dsl_definition font[color='darkslateblue'] {
+  color: #b294bb !important;
+}
+
+.dsl_article .dsl_definition font[color='darkmagenta'] {
+  color: #b294bb !important;
+}
+
+.dsl_article .dsl_definition font[color='sienna'] {
+  color: #b294bb !important;
+}
+
+.dsl_article .dsl_definition font[color='rosybrown'] {
+  color: #b294bb !important;
+}
+
+.dsl_article .dsl_definition font[color='dimgray'] {
+  color: white !important;
+}
+
+.dsl_article .dsl_definition font[color='green'] {
+  color: #5de489 !important;
+}
+
+.dsl_article .dsl_definition font[color='darkgreen'] {
+  color: #b5bd68 !important;
+}
+
+::selection {
+  background: #5294e2;
+  color: white;
+}
+
+code::selection {
+  background: white;
+}
+
+.dsl_s_wav img,
+.lsa_play img,
+.forvo_play img[alt='Play'] {
+  /**
+  display: none;
+  **/
+}
+
+.dsl_s_wav a,
+.lsa_play td:nth-of-type(1) a,
+.forvo_play td:nth-of-type(1) a {
+  color: white;
+  width: 18px;
+  height: 14px;
+  /**
+  display: inline-block;
+  background: url('file:///control_play_lingvo.png') no-repeat center;
+  vertical-align: text-bottom;
+  -webkit-user-select: none;
+  user-select: none;
+  **/
+}
+
+/**
+ * OALD9 Dictionary
+ */
+
+.mdict,
+.mdict ol,
+.head-jump-pos,
+.head-jump-entry,
+.h-g,
+sn-gs,
+.sn-g,
+.x-gs,
+.xg,
+.rx-g,
+.x,
+.num,
+.def,
+.label-g,
+.collapse {
+  color: white !important;
+}
+
+.head-jump-pos a {
+  display: inline-block;
+  background-color: #5de489;
+  color: white !important;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  text-decoration: none;
+  font-size: 90%;
+  border-radius: 2px;
+}
+
+.mdict .if-gs {
+  color: #b294bb !important;
+}
+
+.mdict .gram-g {
+  color: #cc6666 !important;
+}
+
+.mdict .top-container {
+  line-height: 1.2em !important;
+}
+
+.mdict .collapse,
+.mdict .webtop-g {
+  background-color: #03a9f4 !important;
+  border-left: 3px solid #03a9f4 !important;
+}
+
+.mdict .collapse .body .h1,
+.mdict .collapse .body .deflist .li .eb {
+  color: pink !important;
+}
+
+.mdict .collapse .body .inline .li {
+  color: #512da8 !important;
+}
+
+/** Fix numbered list **/
+.mdict ol {
+  list-style-type: none;
+}
+
+.mdict ol li {
+  counter-increment: step-counter;
+}
+
+.mdict ol li::before {
+  content: counter(step-counter);
+  color: #b294bb !important;
+  font-weight: bold;
+}
+
+/** Fix phonetics **/
+
+.mdict .phon {
+  color: #b294bb !important;
+  font-weight: bold;
+}
+
+/**
+ * Longman Dictionary 6
+ */
+
+.entry,
+.example,
+.collocate,
+.collgloss,
+.sense,
+.neutral,
+.exas li {
+  color: white !important;
+}
+
+.hyphenation,
+.homnum,
+.frequent {
+  color: #ffeb3b !important;
+}
+
+.pron,
+.amevarpron {
+  color: #d32f2f !important;
+  font-weight: bold;
+}
+
+.gram,
+.registerlab {
+  color: #03a9f4 !important;
+}
+
+.propformprep,
+.expr,
+.colloc,
+.collo,
+.exp,
+.display,
+.nodeword {
+  color: #ff4081 !important;
+}
+
+.sensenum {
+  color: #b294bb !important;
+}
+
+.collobox {
+  background-color: #f0c674 !important;
+  border-color: #f0c674 !important;
+}
+
+.thesbox {
+  background-color: #ffeb3b !important;
+  border-color: #ffeb3b !important;
+}
+
+.grambox .expl,
+.grambox .compareword,
+.collobox .section,
+.thesbox .section {
+  background-color: #2f343f !important;
+}
+
+.secheading {
+  background-color: #1976d2 !important;
+}
+
+table,
+#definition_T_id,
+#mh_n_T_id,
+#mh_T_id,
+#C_C {
+  color: white !important;
+}
+
+#C_C font {
+  color: white !important;
+}
+
+/* color overrides */
+span[style='color:firebrick'],
+font[color='brown'],
+font[color='green'],
+font[color='#f00'] {
+  color: #cc6666 !important;
+}
+
+font[color='violet'] {
+  color: #de935f !important;
+}
+
+span[style='color:purple'],
+font[color='#808'] {
+  color: #f0c674 !important;
+}
+
+span[style='color:teal'],
+font[color='#080'] {
+  color: #5294e2 !important;
+}
+
+span[style='color:goldenrod'],
+font[color='blueviolet'] {
+  color: #b294bb !important;
+}
+
+span[style='color:green4'],
+font[color='c_default_color'] {
+  color: #8abeb7 !important;
+}
+
+span.dsl_ex,
+span[style='color:slateblue'] {
+  color: #de935f !important;
+}
+
+.sdct_x {
+  color: #e6e6e6 !important;
+  line-height: 1.5;
+}
+
+.xdxf_kref {
+  color: #b5bd68 !important;
+}
+
+.xdxf_ex_old {
+  color: #b8bdc2 !important;
+}
+
+table.conjugation {
+  border-spacing: 0px;
+}
+
+table.conjugation tr {
+  color: #e6e6e6;
+}
+
+table.conjugation tbody tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.1);
+  color: #b8bdc2;
+}
+
+table.conjugation tbody tr:nth-child(1),
+table.conjugation tbody tr:nth-child(11),
+table.conjugation tbody tr:nth-child(14),
+table.conjugation tbody tr:nth-child(22),
+table.conjugation tbody tr:nth-child(25),
+table.conjugation tbody tr:nth-child(3) {
+  display: none;
+}
+
+table.conjugation tbody tr:nth-child(13),
+table.conjugation tbody tr:nth-child(24) {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  background: #2f343f;
+  color: #5294e2;
+}
+
+table.conjugation tbody tr:nth-child(13) td,
+table.conjugation tbody tr:nth-child(24) td {
+  padding: 4px;
+}
+
+table.conjugation tbody tr:nth-child(23),
+table.conjugation tbody tr:nth-child(2) td,
+table.conjugation tbody tr:nth-child(12) td {
+  padding: 4px;
+  color: #5294e2;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: #2f343f;
+  font-weight: 600;
+}
+
+table.conjugation tbody tr:nth-child(23) td,
+table.conjugation tbody tr:nth-child(12) td {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table.conjugation td {
+  font-size: 0.9rem !important;
+  padding: 2px 0;
+}
+
+table.conjugation td.rt,
+table.conjugation td.lt {
+  color: #5f819d !important;
+}
+
+table.conjugation tr[style='height:0.5em'] {
+  background: green;
+}

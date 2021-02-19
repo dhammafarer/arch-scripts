@@ -1,0 +1,203 @@
+:root {
+  --bg: #2f343f;
+  --bg2: #383c4a;
+  --fg: #babdb6;
+  --black1: #2f343f;
+  --black2: #585c61;
+  --red1: #cc4c55;
+  --red2: #da6371;
+  --green1: #5de489;
+  --green2: #83e6a3;
+  --yellow1: #ffb05f;
+  --yellow2: #ffbd7a;
+  --blue1: #506d9c;
+  --blue2: #5294e2;
+  --magenta1: #ab3b76;
+  --magenta2: #e96a9d;
+  --cyan1: #5e8d87;
+  --cyan2: #6fccc0;
+  --white1: #b8bdc2;
+  --white2: #e6e6e6;
+}
+
+* {
+  background: none !important;
+  color: var(--white1);
+}
+
+body {
+  background: var(--bg) !important;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+body::-webkit-scrollbar-track {
+  g-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--bg2);
+}
+
+body::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-resizer {
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white2) !important;
+}
+
+/* fg */
+cite {
+  color: var(--fg) !important;
+}
+
+/* white1 */
+input {
+  color: var(--white1) !important;
+}
+
+b,
+em {
+  color: var(--cyan1) !important;
+}
+
+a {
+  color: var(--cyan2) !important;
+}
+
+/* google.com */
+
+.minidiv {
+  background: var(--bg) !important;
+}
+
+.kp-blk {
+  border-color: var(--fg) !important;
+}
+
+.RNNXgb {
+  border-color: none !important;
+}
+.hdtbna.notl {
+  border-color: var(--blue1) !important;
+}
+
+span.f {
+  color: var(--blue2) !important;
+}
+.O850f,
+.aajZCb {
+  background: var(--bg) !important;
+}
+.DZjDQ > * {
+  color: red !important;
+}
+
+.DocumentTools-overlay {
+  box-shadow: none;
+}
+.node-link {
+  color: var(--magenta2) !important;
+  text-decoration: none !important;
+}
+
+.Node-renderedNote > span {
+  color: var(--fg);
+}
+
+.Node-children {
+  border-color: var(--black2) !important;
+}
+
+.shared {
+  color: var(--blue2) !important;
+}
+
+.has-color .needsclick,
+.has-color span {
+  color: var(--bg) !important;
+}
+
+.mod-color-label-1 {
+  background: var(--red2) !important;
+}
+
+.mod-color-label-2 {
+  background: var(--yellow1) !important;
+}
+
+.mod-color-label-3 {
+  background: var(--yellow2) !important;
+}
+
+.mod-color-label-4 {
+  background: var(--green1) !important;
+}
+
+.mod-color-label-5 {
+  background: var(--blue2) !important;
+}
+
+.mod-color-label-6 {
+  background: var(--cyan2) !important;
+}
+
+.LeftPaneSplitter::after {
+  border-color: var(--black2) !important;
+}
+
+.finder-container {
+  background: var(--bg) !important;
+}
+
+.ContextMenu,
+.popover,
+.Suggestion-dropdown,
+.is-selected {
+  background: var(--bg2) !important;
+}
+
+.node-tag {
+  background: var(--fg) !important;
+  border-radius: 2px !important;
+  color: var(--bg) !important;
+  padding: 0.1em 0.2em;
+  text-decoration: none;
+  opacity: 0.3 !important;
+}
+.node-tag:hover {
+  opacity: 0.7 !important;
+  transition: 0.2s ease-in;
+}
+
+.search-match {
+  color: var(--bg) !important;
+  background-color: var(--cyan2) !important;
+  opacity: 1 !important;
+}
+
+/**** arch wiki ****/
+pre {
+  color: var(--white1) !important;
+}
+
+/**** surfingkeys ****/
+#sk_hints div.myHint {
+  background: var(--yellow1) !important;
+  color: var(--bg) !important;
+}
+
+/**** reddit ****/
+._3obgdFz00GvpqpuX8QCsNK._9BEqyBVXtRCQxyeYwqJMB {
+  background: var(--bg) !important;
+}

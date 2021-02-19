@@ -1,0 +1,221 @@
+<config>
+ <paths>
+  <path recursive="1">/home/pawel/Dropbox/Open dictionaries</path>
+ </paths>
+ <sounddirs/>
+ <dictionaryOrder id="0" name="">
+  <dictionary name="Collins E-C">fb2e01c88935414155211a52a84007cb</dictionary>
+  <dictionary name="Collins C-E">9998b62f7d33513357899f369d7d4d26</dictionary>
+  <dictionary name="高级汉语词典">40110de3357164e4d259389bfe576cab</dictionary>
+  <dictionary name="国际标准汉字大词典">44f0f237324e22b9a82d3ce28278b802</dictionary>
+  <dictionary name="New Oxford English-Chinese Dictionary">90c0e8b79e740582a552171a67bf5768</dictionary>
+  <dictionary name="Gran Diccionario LAROUSSE (ES-ES)">1cd6fb92b5f0138f951d5b7ef2907192</dictionary>
+  <dictionary name="Babylon English-Portuguese">5aadbb6502f0b686739cd13fa72cce19</dictionary>
+  <dictionary name="Babylon Portuguese-English">6a54f0289fc2fd9a3ccbb61e42aa684b</dictionary>
+  <dictionary name="Indonesian-English Online Dictionaries">d291717216b493f7c6014f6aa6ffc680</dictionary>
+  <dictionary name=".:Mas_NDon Indonesian to English Dictionary">d1ffec9b04ebd9c075802847c5b77851</dictionary>
+  <dictionary name="CC-CEDICT 漢英辭典">e59f8b7b063dd7852f0f3d1dd9073b8e</dictionary>
+  <dictionary name="Duden">0b0c2966b8881e1212029002d38d9ede</dictionary>
+  <dictionary name="I2E Spanish-English">ff21f8ab702fdac216b69e9a7fed8445</dictionary>
+  <dictionary name="JMdict">52fd4069229bc23a7df5858042c85dd2</dictionary>
+  <dictionary name="jmdict-en-ja">34bd683a02c6888fcf4b54d6d1eb0de6</dictionary>
+  <dictionary name="Portuguese-English dictionary">16e952befbcadce642066c0d4ac610ff</dictionary>
+  <dictionary name="Spanish - German wordlist">b0b6d9b25ed2ccd0c6883d4c76692535</dictionary>
+  <dictionary name="ABC C-E">d6cf2f703b160861edd3d3b7040dbddc</dictionary>
+  <dictionary name="现代汉语词典">f8843bba4ded0388f7e67ee671ba5659</dictionary>
+  <dictionary name="新时代汉英大词典">884ec5ece13af099a9281b2de49e4ec4</dictionary>
+  <dictionary name="Duden - Deutsches Universalwörterbuch">508d7978a5266c9e773c85f5f72601dc</dictionary>
+  <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
+  <dictionary name="tl-indo">42df048e4fc0be3019da7720a07e4374</dictionary>
+  <dictionary name="tl-phil">b386edb8d884051234075e9e5c25cec5</dictionary>
+  <dictionary name="Kamus Besar">7bd0dc59e9fd6771a50239521571a76f</dictionary>
+  <dictionary name="tl-es">41a5ebf5cea6c2c62413576595ea2006</dictionary>
+  <dictionary name="Spanish Conjugation">110167fa7944ba5770af9e9c85b3e424</dictionary>
+  <dictionary name="tl-zh">57e8d7688dce1d107eaec32035abc984</dictionary>
+  <mutedDictionaries/>
+ </dictionaryOrder>
+ <inactiveDictionaries id="0" name="">
+  <mutedDictionaries/>
+ </inactiveDictionaries>
+ <groups nextId="5">
+  <group id="1" icon="id.png" name="ID">
+   <dictionary name="Indonesian-English Online Dictionaries">d291717216b493f7c6014f6aa6ffc680</dictionary>
+   <dictionary name=".:Mas_NDon Indonesian to English Dictionary">d1ffec9b04ebd9c075802847c5b77851</dictionary>
+   <dictionary name="tl-indo">42df048e4fc0be3019da7720a07e4374</dictionary>
+   <dictionary name="Kamus Besar">7bd0dc59e9fd6771a50239521571a76f</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group id="4" icon="es.png" name="ES">
+   <dictionary name="Spanish Conjugation">110167fa7944ba5770af9e9c85b3e424</dictionary>
+   <dictionary name="Gran Diccionario LAROUSSE (ES-ES)">1cd6fb92b5f0138f951d5b7ef2907192</dictionary>
+   <dictionary name="I2E Spanish-English">ff21f8ab702fdac216b69e9a7fed8445</dictionary>
+   <dictionary name="tl-es">41a5ebf5cea6c2c62413576595ea2006</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group id="2" icon="ph.png" name="PH">
+   <dictionary name="tl-phil">b386edb8d884051234075e9e5c25cec5</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group id="3" icon="cn.png" name="ZH">
+   <dictionary name="高级汉语词典">40110de3357164e4d259389bfe576cab</dictionary>
+   <dictionary name="新时代汉英大词典">884ec5ece13af099a9281b2de49e4ec4</dictionary>
+   <dictionary name="Collins C-E">9998b62f7d33513357899f369d7d4d26</dictionary>
+   <dictionary name="国际标准汉字大词典">44f0f237324e22b9a82d3ce28278b802</dictionary>
+   <dictionary name="CC-CEDICT 漢英辭典">e59f8b7b063dd7852f0f3d1dd9073b8e</dictionary>
+   <dictionary name="现代汉语词典">f8843bba4ded0388f7e67ee671ba5659</dictionary>
+   <dictionary name="tl-zh">57e8d7688dce1d107eaec32035abc984</dictionary>
+   <mutedDictionaries/>
+  </group>
+ </groups>
+ <hunspell dictionariesPath=""/>
+ <transliteration>
+  <enableRussianTransliteration>0</enableRussianTransliteration>
+  <enableGermanTransliteration>0</enableGermanTransliteration>
+  <enableGreekTransliteration>0</enableGreekTransliteration>
+  <enableBelarusianTransliteration>0</enableBelarusianTransliteration>
+  <romaji>
+   <enable>0</enable>
+   <enableHepburn>1</enableHepburn>
+   <enableNihonShiki>0</enableNihonShiki>
+   <enableKunreiShiki>0</enableKunreiShiki>
+   <enableHiragana>1</enableHiragana>
+   <enableKatakana>1</enableKatakana>
+  </romaji>
+ </transliteration>
+ <forvo>
+  <enable>0</enable>
+  <apiKey></apiKey>
+  <languageCodes></languageCodes>
+ </forvo>
+ <mediawikis>
+  <mediawiki id="ae6f89aac7151829681b85f035d54e48" url="https://en.wikipedia.org/w" icon="" name="English Wikipedia" enabled="1"/>
+  <mediawiki id="affcf9678e7bfe701c9b071f97eccba3" url="https://en.wiktionary.org/w" icon="" name="English Wiktionary" enabled="0"/>
+  <mediawiki id="8e0c1c2b6821dab8bdba8eb869ca7176" url="https://ru.wikipedia.org/w" icon="" name="Russian Wikipedia" enabled="0"/>
+  <mediawiki id="b09947600ae3902654f8ad4567ae8567" url="https://ru.wiktionary.org/w" icon="" name="Russian Wiktionary" enabled="0"/>
+  <mediawiki id="a8a66331a1242ca2aeb0b4aed361c41d" url="https://de.wikipedia.org/w" icon="" name="German Wikipedia" enabled="0"/>
+  <mediawiki id="21c64bca5ec10ba17ff19f3066bc962a" url="https://de.wiktionary.org/w" icon="" name="German Wiktionary" enabled="0"/>
+  <mediawiki id="96957cb2ad73a20c7a1d561fc83c253a" url="https://pt.wikipedia.org/w" icon="" name="Portuguese Wikipedia" enabled="0"/>
+  <mediawiki id="ed4c3929196afdd93cc08b9a903aad6a" url="https://pt.wiktionary.org/w" icon="" name="Portuguese Wiktionary" enabled="0"/>
+  <mediawiki id="f3b4ec8531e52ddf5b10d21e4577a7a2" url="https://el.wikipedia.org/w" icon="" name="Greek Wikipedia" enabled="0"/>
+  <mediawiki id="5d45232075d06e002dea72fe3e137da1" url="https://el.wiktionary.org/w" icon="" name="Greek Wiktionary" enabled="0"/>
+ </mediawikis>
+ <websites>
+  <website id="b88cb2898e634c6638df618528284c2d" url="https://www.google.com/dictionary?aq=f&amp;langpair=en|en&amp;q=%GDWORD%&amp;hl=en" icon="" name="Google En-En (Oxford)" enabled="0"/>
+  <website id="f376365a0de651fd7505e7e5e683aa45" url="https://www.urbandictionary.com/define.php?term=%GDWORD%" icon="" name="Urban Dictionary" enabled="0"/>
+  <website id="324ca0306187df7511b26d3847f4b07c" url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" icon="" name="Multitran (En)" enabled="0"/>
+  <website id="924db471b105299c82892067c0f10787" url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" icon="" name="Lingvo (En-Ru)" enabled="0"/>
+  <website id="087a6d65615fb047f4c80eef0a9465db" url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" icon="" name="Michaelis (Pt-En)" enabled="0"/>
+  <website id="7bd0dc59e9fd6771a50239521571a76f" url="https://kbbi.web.id/%GDWORD%" icon="" name="Kamus Besar" enabled="1"/>
+  <website id="e56b53b8318099b7277e9eb4210ec2da" url="https://www.spanishdict.com/translate/%GDWORD%" icon="" name="SpanisDict" enabled="0"/>
+ </websites>
+ <dictservers/>
+ <programs>
+  <program id="42df048e4fc0be3019da7720a07e4374" type="1" commandLine="/home/pawel/arch-scripts/utilities/trans-indo %GDWORD%" icon="" name="tl-indo" enabled="1"/>
+  <program id="b386edb8d884051234075e9e5c25cec5" type="1" commandLine="/home/pawel/arch-scripts/utilities/trans-phil %GDWORD%" icon="" name="tl-phil" enabled="1"/>
+  <program id="41a5ebf5cea6c2c62413576595ea2006" type="1" commandLine="/home/pawel/arch-scripts/utilities/trans-es %GDWORD%" icon="" name="tl-es" enabled="1"/>
+  <program id="57e8d7688dce1d107eaec32035abc984" type="1" commandLine="/home/pawel/arch-scripts/utilities/trans-zh %GDWORD%" icon="" name="tl-zh" enabled="1"/>
+ </programs>
+ <voiceEngines/>
+ <mutedDictionaries/>
+ <popupMutedDictionaries/>
+ <preferences>
+  <interfaceLanguage></interfaceLanguage>
+  <helpLanguage></helpLanguage>
+  <displayStyle></displayStyle>
+  <newTabsOpenAfterCurrentOne>0</newTabsOpenAfterCurrentOne>
+  <newTabsOpenInBackground>1</newTabsOpenInBackground>
+  <hideSingleTab>0</hideSingleTab>
+  <mruTabOrder>0</mruTabOrder>
+  <hideMenubar>0</hideMenubar>
+  <enableTrayIcon>1</enableTrayIcon>
+  <startToTray>1</startToTray>
+  <closeToTray>1</closeToTray>
+  <autoStart>1</autoStart>
+  <doubleClickTranslates>1</doubleClickTranslates>
+  <selectWordBySingleClick>0</selectWordBySingleClick>
+  <escKeyHidesMainWindow>0</escKeyHidesMainWindow>
+  <zoomFactor>1</zoomFactor>
+  <helpZoomFactor>1</helpZoomFactor>
+  <wordsZoomLevel>0</wordsZoomLevel>
+  <enableMainWindowHotkey>1</enableMainWindowHotkey>
+  <mainWindowHotkey>Ctrl+F11, Ctrl+F11</mainWindowHotkey>
+  <enableClipboardHotkey>1</enableClipboardHotkey>
+  <clipboardHotkey>Ctrl+C, Ctrl+C</clipboardHotkey>
+  <enableScanPopup>1</enableScanPopup>
+  <startWithScanPopupOn>1</startWithScanPopupOn>
+  <enableScanPopupModifiers>1</enableScanPopupModifiers>
+  <scanPopupModifiers>3</scanPopupModifiers>
+  <scanPopupAltMode>1</scanPopupAltMode>
+  <scanPopupAltModeSecs>3</scanPopupAltModeSecs>
+  <scanToMainWindow>0</scanToMainWindow>
+  <scanPopupUseUIAutomation>1</scanPopupUseUIAutomation>
+  <scanPopupUseIAccessibleEx>1</scanPopupUseIAccessibleEx>
+  <scanPopupUseGDMessage>1</scanPopupUseGDMessage>
+  <pronounceOnLoadMain>0</pronounceOnLoadMain>
+  <pronounceOnLoadPopup>0</pronounceOnLoadPopup>
+  <useExternalPlayer>0</useExternalPlayer>
+  <useInternalPlayer>1</useInternalPlayer>
+  <audioPlaybackProgram>mplayer</audioPlaybackProgram>
+  <alwaysOnTop>0</alwaysOnTop>
+  <searchInDock>1</searchInDock>
+  <historyStoreInterval>0</historyStoreInterval>
+  <proxyserver useSystemProxy="0" enabled="0">
+   <type>0</type>
+   <host></host>
+   <port>3128</port>
+   <user></user>
+   <password></password>
+   <systemProxyUser></systemProxyUser>
+   <systemProxyPassword></systemProxyPassword>
+  </proxyserver>
+  <checkForNewReleases>1</checkForNewReleases>
+  <disallowContentFromOtherSites>1</disallowContentFromOtherSites>
+  <enableWebPlugins>0</enableWebPlugins>
+  <hideGoldenDictHeader>1</hideGoldenDictHeader>
+  <maxStringsInHistory>500</maxStringsInHistory>
+  <storeHistory>1</storeHistory>
+  <alwaysExpandOptionalParts>0</alwaysExpandOptionalParts>
+  <addonStyle>arc-dark</addonStyle>
+  <collapseBigArticles>0</collapseBigArticles>
+  <articleSizeLimit>2000</articleSizeLimit>
+  <maxDictionaryRefsInContextMenu>20</maxDictionaryRefsInContextMenu>
+  <trackClipboardChanges>0</trackClipboardChanges>
+  <fullTextSearch>
+   <searchMode>0</searchMode>
+   <matchCase>0</matchCase>
+   <maxArticlesPerDictionary>100</maxArticlesPerDictionary>
+   <maxDistanceBetweenWords>2</maxDistanceBetweenWords>
+   <useMaxArticlesPerDictionary>0</useMaxArticlesPerDictionary>
+   <useMaxDistanceBetweenWords>1</useMaxDistanceBetweenWords>
+   <dialogGeometry></dialogGeometry>
+   <disabledTypes></disabledTypes>
+   <enabled>1</enabled>
+   <maxDictionarySize>0</maxDictionarySize>
+  </fullTextSearch>
+ </preferences>
+ <lastMainGroupId>3</lastMainGroupId>
+ <lastPopupGroupId>3</lastPopupGroupId>
+ <popupWindowState>AAAA/wAAAAH9AAAAAAAAAisAAAGRAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHICAAAAAP////8AAAAAAAAAAA==</popupWindowState>
+ <popupWindowGeometry>AdnQywADAAAAAANVAAABGgAABX8AAAKqAAADVQAAARoAAAV/AAACqgAAAAAAAAAAB4AAAANVAAABGgAABX8AAAKq</popupWindowGeometry>
+ <pinPopupWindow>0</pinPopupWindow>
+ <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAADMAAAEEfwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUBAAAAEwAABBEAAAB+AP///wAAAAEAAADMAAAByfwCAAAAAvsAAAASAGQAaQBjAHQAcwBQAGEAbgBlAAAAAC4AAAHJAAAAWwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUAAAAALgAAAvYAAABbAP///wAABq4AAAQRAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgAAAAAA/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAAAAAAAFAAAB4EAAAQ5AAAAAQAAABUAAAeAAAAEOAAAAAAAAAAAB4AAAAABAAAAFQAAB4AAAAQ4</mainWindowGeometry>
+ <helpWindowGeometry></helpWindowGeometry>
+ <helpSplitterState></helpSplitterState>
+ <dictInfoGeometry></dictInfoGeometry>
+ <inspectorGeometry>AdnQywADAAAAAAAUAAAAHgAAA7UAAAQjAAAAFQAAAB8AAAO0AAAEIgAAAAAAAAAAB4AAAAAVAAAAHwAAA7QAAAQi</inspectorGeometry>
+ <timeForNewReleaseCheck>2019-12-09T11:41:05</timeForNewReleaseCheck>
+ <skippedRelease></skippedRelease>
+ <showingDictBarNames>0</showingDictBarNames>
+ <usingSmallIconsInToolbars>1</usingSmallIconsInToolbars>
+ <editDictionaryCommandLine></editDictionaryCommandLine>
+ <maxPictureWidth>0</maxPictureWidth>
+ <maxHeadwordSize>256</maxHeadwordSize>
+ <headwordsDialog>
+  <searchMode>0</searchMode>
+  <matchCase>0</matchCase>
+  <autoApply>0</autoApply>
+  <headwordsExportPath></headwordsExportPath>
+  <headwordsDialogGeometry></headwordsDialogGeometry>
+ </headwordsDialog>
+</config>

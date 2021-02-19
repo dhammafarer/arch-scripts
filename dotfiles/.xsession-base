@@ -1,0 +1,9 @@
+xsetroot -cursor_name left_ptr
+
+picom --config $HOME/.xmonad/scripts/picom.conf &
+
+feh --bg-scale ~/.background-image &
+udiskie -a &
+volnoti -t 1 &
+volumeicon &
+kupfer --no-splash &

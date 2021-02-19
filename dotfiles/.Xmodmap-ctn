@@ -1,0 +1,8 @@
+clear Mod1
+clear Mod3
+clear Mod4
+add Mod1 = Alt_L
+add Mod3 = Alt_R
+add Mod4 = Super_L
+
+pointer = 1 9 3 4 5 7 6 8 2 10 11 12

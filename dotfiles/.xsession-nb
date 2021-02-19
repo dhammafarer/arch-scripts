@@ -1,0 +1,6 @@
+~/arch-scripts/dotfiles/.xsession-base
+
+ibus-daemon --xim &
+task sync &&
+
+stalonetray -c ~/.xmonad/stalonetrayrc-single-nb

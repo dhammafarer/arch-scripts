@@ -1,0 +1,312 @@
+#!/bin/sh
+
+# commands=
+alias ll="ls -lah"
+alias chx="chmod +x"
+alias off="sudo shutdown -P now"
+alias restart="sudo shutdown -r now"
+alias pacs="sudo pacman -Syu"
+alias spacs="pacman -Ss"
+alias syu="sudo pacman -Syu"
+alias yays="yay -Syu"
+alias syays="yay -Ss"
+alias sn="shutdown-sequence"
+alias xmp="xmodmap ~/.Xmodmap"
+
+#system
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+# taskwarrior
+alias taskrc="as && vim ./dotfiles/.taskrc"
+alias in="task add +in"
+alias tw="task add +@work"
+alias tl="task add +learn"
+alias hin="task add +in +@home "
+
+shutdown-sequence () {
+  #pass git push -u origin master && shutdown now
+  shutdown now
+}
+
+tickle () {
+    deadline=$1
+    shift
+    task add +in +tickle wait:$deadline $@
+}
+
+next-task () {
+    id=$1
+    task $id modify +next
+}
+
+start-task () {
+    id=$1
+    next_task $id
+    task $id start
+}
+alias tick=tickle
+alias think='tickle +1d'
+alias n=next-task
+alias s=start-task
+
+# files
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias aliases="as && vim ./dotfiles/.aliases"
+alias xres="as && vim ./dotfiles/.Xresources"
+alias zshrc="as && vim ./dotfiles/.zshrc"
+alias history="vim ~/.zsh_history"
+alias vimrc="as && vim ./dotfiles/.vimrc"
+alias diary='/usr/bin/gvim -geometry 80x10+600+400 -c "VimwikiMakeDiaryNote" + -c "DiaryTime"'
+alias xmrc="cd ~/arch-scripts/dotfiles/.xmonad && vim ./xmonad.hs"
+alias theme="as && vim ./dotfiles/.xres/themes/arc"
+alias cptheme="cat ~/arch-scripts/dotfiles/.xres/themes/arc | ctc"
+
+# clipboard
+alias addworkcn="cat ~/Sync/Documents/addressbook/work-zh | xclip -selection clipboard"
+alias addwork="cat ~/Sync/Documents/addressbook/work | xclip -selection clipboard"
+alias addhome="cat ~/Sync/Documents/addressbook/home | xclip -selection clipboard"
+
+# directories
+alias as="cd ~/arch-scripts"
+alias us="cd ~/.vim/UltiSnips"
+
+# snippets
+alias snh="vim ~/.vim/UltiSnips/haskell.snippets"
+
+#vagrant
+alias vu="vagrant up"
+alias vh="vagrant halt"
+alias vs="vagrant ssh"
+
+
+# scripts
+alias tl-indo="~/scripts/misc/trans-indo"
+alias sndocs="~/scripts/sync/sync_documents.sh 1.89"
+alias spdocs="~/scripts/sync/sync_documents.sh 1.81"
+alias snpics="~/scripts/sync/sync_pictures.sh 1.89"
+alias sppics="~/scripts/sync/sync_pictures.sh 1.81"
+alias prefZeroes="node ~/Code/own-scripts/padZeroes/index.js"
+alias ase="node ~/Code/own-scripts/ase-converter/index.js"
+alias ramda="~/scripts/vendor/ramda.sh"
+alias blendproject="~/scripts/misc/blender-project.sh"
+
+youtube-dl-mp3() {
+    youtube-dl --extract-audio --audio-format mp3 --output "~/Nextcloud/Music/transcribe/%(title)s.%(ext)s" $1
+}
+
+alias ytmp3=youtube-dl-mp3
+
+
+# Navigation
+alias code="cd ~/Code"
+alias docs="cd ~/Documents"
+alias desk="cd ~/Desktop"
+alias snc="cd ~/Sync"
+alias down="cd ~/Downloads"
+alias xd="xo ."
+alias org="cd ~/Sync/Org && vim ."
+
+# Git Stuff
+git-clone-repo() {
+  git clone https://github.com/$1
+}
+
+git-clone-repo-dhammafarer() {
+  git clone https://github.com/dhammafarer/$1
+}
+
+git-create-repo() {
+  NAME=${1:-`basename $PWD`}
+  curl -u 'dhammafarer' https://api.github.com/user/repos -d "{\"name\":\"$NAME\"}"
+}
+
+git-set-remote() {
+  NAME=${1:-`basename $PWD`}
+  git remote set-url origin git@github.com:dhammafarer/$NAME.git
+  git remote -v
+}
+
+git-add-remote() {
+  NAME=${1:-`basename $PWD`}
+  git remote add origin git@github.com:dhammafarer/$NAME.git
+  git remote -v
+}
+
+git-create-init-repo() {
+  git-create-repo &&
+  git init &&
+  git-add-remote
+}
+
+alias ga="git add"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gac="git add . && git commit -m"
+alias gca="git commit --amend"
+alias gch="git checkout"
+alias gchb="git checkout -b"
+alias gm="git merge"
+alias grbm="git rebase master"
+alias gp="git push"
+alias gd="git diff"
+alias gpgh="git push github"
+alias gph="git push heroku"
+alias gst="git status"
+alias gsr="git-set-remote"
+alias gar="git-add-remote"
+alias glog="git log"
+alias gcl="git-clone-repo"
+alias gcld="git-clone-repo-dhammafarer"
+alias nah="git reset --hard; git clean -dif;"
+alias gic="git init && gaa && gc 'initial commit'"
+alias gcir="git-create-init-repo"
+alias gchm="git checkout master"
+alias gchd="git checkout dev"
+alias gpo="git push -u origin"
+alias gpod="git push -u origin dev"
+alias gpom="git push -u origin master"
+alias gpul="git pull origin master"
+alias gpod="git push -u origin dev"
+alias gcr=git-create-repo
+alias gus="cd ~/.vim/UltiSnips && git add . && git commit -m"
+
+# Pass
+alias pgpom="pass git push -u origin master"
+alias pgpul="pass git pull origin master"
+alias pcg="pc github/dhammafarer"
+alias pce="pc email/pawel.lisewski@protonmail.com"
+alias pceg="pc email/pawel.lisewski@gmail.com"
+alias pcl="pc messengers/line"
+alias pcn="pc nextcloud/revachol/pawel"
+alias pcna="pc nextcloud/revachol/admin"
+alias pcnj="pc nextcloud/revachol/jennifer"
+alias pcnc="pc nextcloud/revachol/ctn"
+
+# working files and directories
+alias otpl="cd ~/Code/ruby/otpl/"
+alias mupa="mv ~/Downloads/*.mm /run/user/1000/gvfs/mtp:host=%5Busb%3A001%2C005%5D/'Internal storage'/Mindmaps/"
+alias snip="us && vim ."
+alias bbmusic="rsync -av --stats -progress --modify-window=1 ~/Music/BB/ /media/pawel/1287-C662/Music && mv /media/pawel/1287-C662/Music/*.m3u /media/pawel/1287-C662/"
+
+#pomodoro
+pomo-start() {
+  TASKID=$(task rc.verbose: i)
+  task $TASKID start
+  /home/pawel/.xmonad/bin/pomo.sh start
+}
+
+pomo-stop() {
+  TASKID=$(task rc.verbose: i)
+  task $TASKID stop
+  /home/pawel/.xmonad/bin/pomo.sh stop
+}
+
+#applications
+alias radio="pyradio -p 6 -d"
+alias mpsytcc="rm ~/.config/mps-youtube/cache_py_3.* && mpsyt"
+alias pomo="/home/pawel/.xmonad/bin/pomo.sh"
+alias rgr="ranger"
+#alias pomodoro="/home/pawel/.xmonad/bin/pomodoro"
+alias pomo="/home/pawel/.xmonad/bin/pomo.sh"
+alias rsf="pkill -USR1 redshift"
+alias xo="xdg-open"
+#alias t="tree -L 2"
+alias pc="pass -c"
+alias tmpw="cd /tmp; wget "
+alias ctc="xclip -selection clipboard"
+alias cx="xclip"
+alias vx="xclip -o"
+alias cdc="pwd | xclip"
+alias calc="calibreConvert"
+alias cals="calibreSend"
+alias gi="grep -i"
+alias vpi="vim +PluginInstall +qall"
+alias remkey="telnet 192.168.0.78 2323"
+alias rr="ramda-repl"
+alias cw="cdc && mate-terminal && cdv"
+
+# ~/Apps
+alias bledge="~/Apps/blender/blender"
+alias arbites="cd ~/Downloads/Arbites\ Innova\ 2-3-5\ Gtk2 && mono ArbitesEto2.Gtk2.exe"
+alias bike-weather="curl 'wttr.in/{Neihu,Dazhi,Beitou}?1'"
+
+#samba
+alias mnas="sudo mount -t cifs //192.168.7.30/市場行銷部 /mnt/nas -o username=pawel,password=abcd1234,workgroup=workgroup,iocharset=utf8,uid=pawel,gid=users"
+alias unas="sudo umount /mnt/nas"
+
+##development
+#js
+alias ni="npm init -y"
+alias ns="npmInstallSave"
+alias nsd="npmInstallSaveDev"
+alias wds="webpack-dev-server"
+alias sbx="cd ~/Code/react/sandbox && gvv"
+
+#gatsby
+alias gatdev="gatsby develop"
+alias gatcc="rm -rf .cache"
+
+#react
+alias npm-react="ns-react && ns-redux && nsd-webpack && nsd-babel && nsd-loaders && nsd-test && nsd-lint && nsd-tools"
+alias ns-react="ns react react-dom react-router"
+alias ns-redux="ns redux react-redux react-router-redux redux-thunk"
+alias nsd-webpack="nsd webpack webpack-dev-middleware webpack-hot-middleware"
+alias nsd-babel="nsd babel-cli babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-react-hmre babel-register"
+alias nsd-loaders="nsd css-loader style-loader sass-loader node-sass url-loader file-loader"
+alias nsd-test="nsd mocha chai chai-immutable react-addons-test-utils enzyme jsdom nock redux-mock-store"
+alias nsd-lint="nsd eslint eslint-plugin-import eslint-plugin-react eslint-watch"
+alias nsd-tools="nsd colors compression express npm-run-all open"
+
+## Stack
+alias st="stack test"
+alias sr="stack repl"
+alias sg="stack ghci"
+alias se="stack exec"
+
+#curl
+alias cpost="curl-post-json"
+
+#VBox
+alias win="VBoxManage startvm 'windows'"
+alias macos="cd ~/macOS/ && ./start-mac.sh"
+alias ub="VBoxManage startvm 'Ubuntu 16.04 Server' --type headless && ssh -p 3022 pawel@localhost"
+
+#MindMup files
+alias mmjs="google-chrome https://drive.mindmup.com/map/0BzinmNhilDCUTGpaN2lUOEcwTGM &"
+
+##wget
+#get from url in clipboard
+#alias wc="xclip -o | xargs wget"
+
+##remind
+alias reminders="vim ~/.reminders"
+alias remindn="remind -n ~/.reminders"
+alias remindc="remind -c ~/.reminders"
+
+compress-pdf () {
+  INPUT=$1
+  SETTINGS=${2:-printer}
+  filename=$(basename -- "$INPUT")
+  FILENAME="${filename%.*}"
+  gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/$SETTINGS -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${FILENAME}-${SETTINGS}.pdf $INPUT
+}
+
+alias cpdf=compress-pdf
+
+alias run-figma-linux-font-helper="python3 ~/figma-linux-font-helper/server.py"
+
+#ssh
+alias r8="ssh -p '8022' 'u0_a135@192.168.1.123'"
+alias r8h="ssh -p '8022' 'u0_a135@192.168.0.12'"
+alias revachol="ssh -p '437' 'pawel@revachol.ddns.net'"
+alias klaasje="ssh -p '437' 'ubuntu@klaasje.ddns.net'"
+
+#install
+alias install-vundle="git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
+
+#Huion
+alias h0off="xrandr --output HDMI-0 --off"
+alias dp5h0="xrandr --output DP-5 --auto --primary --output HDMI-0 --auto --below DP-5"
+huion () {
+ ~/arch-scripts/dotfiles/$HUION
+}
