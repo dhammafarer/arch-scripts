@@ -310,3 +310,7 @@ alias dp5h0="xrandr --output DP-5 --auto --primary --output HDMI-0 --auto --belo
 huion () {
  ~/arch-scripts/dotfiles/$HUION
 }
+
+#xmonad
+alias xmr="xmonad --recompile"
+alias xmrr="xmonad --recompile && xmonad --restart"
