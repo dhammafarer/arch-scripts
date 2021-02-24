@@ -181,6 +181,7 @@ alias pcn="pc nextcloud/klaasje/pawel"
 alias pcna="pc nextcloud/klaasje/admin"
 alias pcnj="pc nextcloud/klaasje/jennifer"
 alias pcnc="pc nextcloud/klaasje/ctn"
+alias pcnm="pc nextcloud/klaasje/media"
 alias pgen="pgpul && pass generate -c"
 
 # working files and directories
