@@ -177,10 +177,11 @@ alias pcg="pc github/dhammafarer"
 alias pce="pc email/pawel.lisewski@protonmail.com"
 alias pceg="pc email/pawel.lisewski@gmail.com"
 alias pcl="pc messengers/line"
-alias pcn="pc nextcloud/revachol/pawel"
-alias pcna="pc nextcloud/revachol/admin"
-alias pcnj="pc nextcloud/revachol/jennifer"
-alias pcnc="pc nextcloud/revachol/ctn"
+alias pcn="pc nextcloud/klaasje/pawel"
+alias pcna="pc nextcloud/klaasje/admin"
+alias pcnj="pc nextcloud/klaasje/jennifer"
+alias pcnc="pc nextcloud/klaasje/ctn"
+alias pgen="pgpul && pass generate -c"
 
 # working files and directories
 alias otpl="cd ~/Code/ruby/otpl/"
@@ -298,7 +299,6 @@ alias run-figma-linux-font-helper="python3 ~/figma-linux-font-helper/server.py"
 #ssh
 alias r8="ssh -p '8022' 'u0_a135@192.168.1.123'"
 alias r8h="ssh -p '8022' 'u0_a135@192.168.0.12'"
-alias revachol="ssh -p '437' 'pawel@revachol.ddns.net'"
 alias klaasje="ssh -p '437' 'ubuntu@klaasje.ddns.net'"
 
 #install
