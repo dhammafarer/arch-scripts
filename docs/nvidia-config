@@ -1,0 +1,6 @@
+add to /usr/X11/xorg.conf
+
+Section "Files"
+    ModulePath      "/usr/lib/nvidia/xorg"
+    ModulePath      "/usr/lib/xorg/modules"
+EndSection
