@@ -1,0 +1,8 @@
+adb devices
+adb root
+
+adb remount
+adb push ~/Downloads/libjni_latinimegoogle.so /system/lib64/
+adb unroot
+
+adb kill-server
