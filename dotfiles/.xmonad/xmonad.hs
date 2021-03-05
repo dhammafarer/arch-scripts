@@ -96,6 +96,7 @@ myManageHook = composeAll
     , className =? "mpv"                --> doShift five
     , className =? "smplayer"           --> doShift five
     , className =? "Emacs"              --> doShift five
+    , className =? "superProductivity"  --> doShift four
     --, className =? "figma-linux"        --> doShift five
     , className =? "libreoffice-writer" --> doShift four
     , resource  =? "gpicview"           --> doFloat

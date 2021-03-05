@@ -17,3 +17,5 @@ xmodmap ~/arch-scripts/dotfiles/.Xmodmap-ctn
 export HUION="huion-setup-ctn"
 
 #rm ~/pyradio.log
+
+krita &
