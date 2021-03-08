@@ -1,14 +1,23 @@
 #!/bin/sh
 
+
+yay-install () {
+  yay -Syu $1 && xmonad --recompile
+}
+
+pacman-install () {
+  sudo pacman -Syu $1 && xmonad --recompile
+}
+
 # commands=
 alias ll="ls -lah"
 alias chx="chmod +x"
 alias off="sudo shutdown -P now"
 alias restart="sudo shutdown -r now"
-alias pacs="sudo pacman -Syu"
+alias pacs="pacman-install"
 alias spacs="pacman -Ss"
-alias syu="sudo pacman -Syu"
-alias yays="yay -Syu"
+alias syu="sudo pacman -Syu && xmonad --recompile"
+alias yays="yay-install"
 alias syays="yay -Ss"
 alias sn="shutdown-sequence"
 alias xmp="xmodmap ~/.Xmodmap"
