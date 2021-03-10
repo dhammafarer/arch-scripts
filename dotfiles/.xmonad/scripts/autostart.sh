@@ -31,8 +31,8 @@ run volnoti -t 1 &
 run kupfer --no-splash &
 run nextcloud &
 run goldendict &
-
-ibus-daemon -drx &
+#ibus-daemon -drx &
+run fcitx5 &
 feh --bg-fill $HOME/.background-image &
 
 run stalonetray -c ~/.xmonad/stalonetrayrc-1920x1080 &

@@ -36,11 +36,11 @@ myBrowser = "firefox"
 myScreensaver = "/usr/bin/xscreensaver-command -l"
 
 -- The command to take a selective screenshot, where you select
--- what you'd like to capture on the screen.
-mySelectScreenshot = "select-screenshot"
+myDelayedScreenshot = "maim -d 3 ~/shots/$(date +%Y-%m-%d_%T).png"
 
--- The command to take a fullscreen screenshot.
-myScreenshot = "gscreenshot"
+mySelectScreenshot = "maim -s -u | xclip -selection clipboard -t image/png -i"
+
+myScreenshot = "maim -u | xclip -selection clipboard -t image/png -i"
 
 -- The command to use as a launcher, to launch commands that don't have
 -- preset keybindings.
@@ -207,7 +207,10 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_k), spawn myLauncher)
 
   -- Take a selective screenshot using the command specified by mySelectScreenshot.
-  , ((modMask .|. controlMask .|. shiftMask, xK_i), spawn mySelectScreenshot)
+  , ((modMask .|. controlMask .|. shiftMask, xK_i), spawn myDelayedScreenshot)
+
+  -- Take a selective screenshot using the command specified by mySelectScreenshot.
+  , ((modMask .|. controlMask, xK_i), spawn mySelectScreenshot)
 
   -- Take a full screenshot using the command specified by myScreenshot.
   , ((modMask .|. shiftMask, xK_i), spawn myScreenshot)
