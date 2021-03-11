@@ -19,3 +19,6 @@ export HUION="huion-setup-ctn"
 #rm ~/pyradio.log
 
 krita &
+signal &
+thunderbird &
+superproductivity &
