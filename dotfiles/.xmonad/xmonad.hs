@@ -269,7 +269,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   --, ((modMask, xK_b), sendMessage $ JumpToLayout "Tall")
 
   -- Jump to TwoPane
-  , ((modMask, xK_n), sendMessage $ JumpToLayout "TwoPane")
+  , ((modMask, xK_j), sendMessage $ JumpToLayout "TwoPane")
 
 
   --  Reset the layouts on the current workspace to default.
@@ -335,7 +335,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   ++
 
   [((modMask .|. mask, key), f sc)
-    | (key, sc) <- zip [xK_c, xK_j] [0..]
+    | (key, sc) <- zip [xK_c, xK_n] [0..]
     , (f, mask) <- [(viewScreen def, 0), (sendToScreen def, shiftMask)]]
 
   ++
