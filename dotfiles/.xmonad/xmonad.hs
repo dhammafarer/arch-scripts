@@ -21,6 +21,8 @@ import XMonad.Util.EZConfig(additionalKeys)
 import Graphics.X11.ExtraTypes.XF86
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
+import XMonad.Actions.PhysicalScreens
+import Data.Default
 
 
 ------------------------------------------------------------------------
@@ -57,12 +59,12 @@ mySpacing = spacingRaw True (Border 0 10 10 10) True (Border 10 10 10 10) True
 -- The default number of workspaces (virtual screens) and their names.
 --
 one   = "\xf120"
-two   = "\xf268"
+two   = "\xf109"
 three = "\xf4ad"
 four  = "\xf1b2"
 five  = "\xf87c"
 six   = "\xf17a"
-seven = "\xf109"
+seven = "\xf268"
 
 myWorkspaces = [one,two,three,four,five,six,seven] ++ map show [8..9]
 
@@ -82,12 +84,9 @@ myWorkspaces = [one,two,three,four,five,six,seven] ++ map show [8..9]
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    --[ className =? "Chromium"           --> doShift two
-    --, className =? "Google-chrome"      --> doShift two
     [ resource  =? "desktop_window"     --> doIgnore
     , className =? "Pidgin"             --> doShift three
     , className =? "Thunderbird"        --> doShift three
-    -- , className =? "Chromium"           --> doShift three
     , className =? "discord"            --> doShift three
     , className =? "Signal"             --> doShift three
     , className =? "Gimp"               --> doShift four
@@ -97,13 +96,12 @@ myManageHook = composeAll
     , className =? "smplayer"           --> doShift five
     , className =? "Emacs"              --> doShift five
     , className =? "superProductivity"  --> doShift six
-    --, className =? "figma-linux"        --> doShift five
     , className =? "libreoffice-writer" --> doShift four
     , resource  =? "gpicview"           --> doFloat
     , className =? "MPlayer"            --> doFloat
     , className =? "VirtualBox Manager" --> doShift six
     , className =? "Qemu-system-x86_64" --> doShift five
-    , className =? "krita"              --> doShift seven
+    , className =? "krita"              --> doShift two
     , className =? "stalonetray"        --> doIgnore
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]
 
@@ -150,12 +148,12 @@ gt2f = avoidStruts (
 fsf= noBorders (fullscreenFull Full)
 
 myLayout = onWorkspace one gft
-           $ onWorkspace two gft
+           $ onWorkspace two fsf
            $ onWorkspace three gt2f
            $ onWorkspace four ft
            $ onWorkspace five fsf
            $ onWorkspace six fsf
-           $ onWorkspace seven fsf
+           $ onWorkspace seven gft
            l0
 
 ------------------------------------------------------------------------
@@ -228,10 +226,10 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask .|. controlMask, xK_k), spawn "amixer -q set Master toggle")
 
   -- Decrease volume.
-  , ((modMask .|. controlMask, xK_j), spawn "amixer -q set Master 5%-")
+  --, ((modMask .|. controlMask, xK_j), spawn "amixer -q set Master 5%-")
 
   -- Increase volume.
-  , ((modMask .|. controlMask, xK_m), spawn "amixer -q set Master 5%+")
+  --, ((modMask .|. controlMask, xK_m), spawn "amixer -q set Master 5%+")
 
   -- Start pomodoro
   , ((modMask, xK_F5), spawn "/home/pawel/.xmonad/bin/pomo.sh start")
@@ -284,7 +282,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_d), windows W.focusDown)
 
   -- Move focus to the previous window.
-  , ((modMask, xK_c), windows W.focusUp  )
+  --, ((modMask, xK_c), windows W.focusUp  )
 
   -- Move focus to the master window.
   , ((modMask, xK_v), windows W.focusMaster  )
@@ -328,17 +326,24 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- TODO: update this binding with avoidStruts, ((modMask, xK_b),
 
   -- Quit xmonad.
-  , ((modMask .|. shiftMask, xK_j), io (exitWith ExitSuccess))
+  , ((modMask .|. shiftMask, xK_m), io (exitWith ExitSuccess))
 
   -- Restart xmonad.
   , ((modMask .|. shiftMask, xK_x), restart "xmonad" True)
   ]
+  -- view screen
+  ++
+
+  [((modMask .|. mask, key), f sc)
+    | (key, sc) <- zip [xK_c, xK_j] [0..]
+    , (f, mask) <- [(viewScreen def, 0), (sendToScreen def, shiftMask)]]
+
   ++
 
   -- mod-[1..9], Switch to workspace N
   -- mod-shift-[1..9], Move client to workspace N
   [((m .|. modMask, k), windows $ f i)
-    | (i, k) <- zip (XMonad.workspaces conf) ([xK_r, xK_s, xK_t, xK_w, xK_f, xK_p, xK_b] ++ [xK_8 .. xK_9])
+    | (i, k) <- zip (XMonad.workspaces conf) ([xK_r, xK_b, xK_t, xK_w, xK_f, xK_p, xK_s] ++ [xK_8 .. xK_9])
       , (f, m) <- [(W.greedyView, 0), (W.shift, controlMask)]]
 
     where halveHor d i  | d `elem` [L,R] = i `div` 2
