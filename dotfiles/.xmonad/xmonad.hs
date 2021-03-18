@@ -282,7 +282,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_d), windows W.focusDown)
 
   -- Move focus to the previous window.
-  --, ((modMask, xK_c), windows W.focusUp  )
+  , ((modMask, xK_c), windows W.focusUp  )
 
   -- Move focus to the master window.
   , ((modMask, xK_v), windows W.focusMaster  )
@@ -303,7 +303,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_l), sendMessage Expand)
 
   -- Next Screen.
-  , ((modMask, xK_space), nextScreen)
+  --, ((modMask, xK_space), nextScreen)
 
   -- Gaps bindings
   , ((modMask .|. controlMask, xK_g), sendMessage $ ToggleGaps)               -- toggle all gaps
@@ -335,7 +335,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   ++
 
   [((modMask .|. mask, key), f sc)
-    | (key, sc) <- zip [xK_c, xK_n] [0..]
+    | (key, sc) <- zip [xK_space, xK_n] [0..]
     , (f, mask) <- [(viewScreen def, 0), (sendToScreen def, shiftMask)]]
 
   ++
