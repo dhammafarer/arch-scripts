@@ -5,9 +5,9 @@ echo "MODULE: VIRTUAL BOX"
 echo
 
 PKGS=(
-    'virtualbox'
     'virtualbox-host-modules-arch'
     'virtualbox-guest-iso'
+    'vagrant'
 )
 
 for PKG in "${PKGS[@]}"; do

@@ -15,6 +15,7 @@ PKGS=(
     'paperkey'
     'pass'
     'rsync'
+    'signal-desktop'
     'udisk2'
     'udiskie'
     'unrar'

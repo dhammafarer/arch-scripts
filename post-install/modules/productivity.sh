@@ -22,9 +22,9 @@ done
 # -----------------------------------------------------------------------
 
 echo
-echo "LINKING DOTFILES"
+echo "Copy Goldendict Config"
 
-ln -fs ~/arch-scripts/dotfiles/.goldendict/config ~/.goldendict/config/
+cp -r ~/Nextcloud/AppData/.goldendict ~
 
 # ------------------------------------------------------------------------
 

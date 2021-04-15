@@ -6,6 +6,7 @@ URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
 !! General
+Xcursor.size:               16
 URxvt.depth:                32
 URxvt.scrollBar:            false
 URxvt.scrollBar_right:      false

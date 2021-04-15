@@ -1,4 +1,4 @@
 #!/bin/bash
 
-xsetwacom --set "Tablet Monitor Pen stylus" MapToOutput "HEAD-1"
-xsetwacom set "Tablet Monitor Pen stylus" Button 2 "key +space"
+xsetwacom --set "Tablet Monitor stylus" MapToOutput "HEAD-1"
+xsetwacom set "Tablet Monitor stylus" Button 2 "key +space"

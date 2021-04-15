@@ -6,9 +6,9 @@ echo
 
 # ------------------------------------------------------------------------
 PKGS=(
-
-    'ibus'
-    'ibus-libpinyin'
+  'fcitx5'
+  'fcitx5-configtool'
+  'fcitx5-rime'
 )
 
 for PKG in "${PKGS[@]}"; do

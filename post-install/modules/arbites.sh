@@ -21,7 +21,8 @@ done
 echo
 echo "ADDING USER TO GROUPS"
 
-sudo usermod -a -G uucp lock pawel
+sudo usermod -a -G uucp pawel
+sudo usermod -a -G lock pawel
 
 # ------------------------------------------------------------------------
 

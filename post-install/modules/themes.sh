@@ -24,7 +24,7 @@ done
 echo
 echo "LINKING DOTFILES"
 ln -fs /home/pawel/arch-scripts/dotfiles/.gtkrc-2.0 ~
-ln -fs /home/pawel/arch-scripts/dotfiles/.config/gtk-3.0 ~/.config/
+ln -fs /home/pawel/Nextcloud/AppData/.config/gtk-3.0 ~/.config/
 ln -fs /home/pawel/arch-scripts/post-install/modules/files/.background-image ~
 
 # ------------------------------------------------------------------------
