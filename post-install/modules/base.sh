@@ -6,12 +6,12 @@ echo
 
 PKGS=(
     'atool'
-    'android-tools'
     'curl'
     'feh'
     'hardinfo'
     'htop'
     'kupfer'
+    'maim'
     'ntfs-3g'
     'ntp'
     'paperkey'

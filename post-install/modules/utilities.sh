@@ -1,13 +1,15 @@
 echo
-echo "MODULE: PRODUCTIVITY"
+echo "MODULE: UTILITIES"
 echo
 
 # ------------------------------------------------------------------------
 
 PKGS=(
-
-    'ghostscript'
-    'gsfonts'
+    'android-tools'
+    'goldendict'
+    'mupdf'
+    'pwgen'
+    'translate-shell'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -15,16 +17,8 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-# -----------------------------------------------------------------------
-
-echo
-echo "Copy Goldendict Config"
-
-cp -r ~/Nextcloud/AppData/.goldendict ~
-
 # ------------------------------------------------------------------------
 
 echo
 echo "Done!"
-
 echo
