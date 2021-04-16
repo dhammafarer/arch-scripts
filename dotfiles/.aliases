@@ -326,3 +326,7 @@ huion () {
 #xmonad
 alias xmr="xmonad --recompile"
 alias xmrr="xmonad --recompile && xmonad --restart"
+
+#utilities
+alias gen-pass="pwgen -ysBv 20"
+alias gen-login="pwgen -sBv 15"
