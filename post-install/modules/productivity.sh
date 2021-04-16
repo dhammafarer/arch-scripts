@@ -11,7 +11,6 @@ PKGS=(
     'goldendict'
     'mupdf'
     'translate-shell'
-    'kupfer'
 )
 
 for PKG in "${PKGS[@]}"; do

@@ -9,6 +9,7 @@ PKGS=(
   'fcitx5'
   'fcitx5-configtool'
   'fcitx5-rime'
+  'fcitx5-chinese-addons'
 )
 
 for PKG in "${PKGS[@]}"; do

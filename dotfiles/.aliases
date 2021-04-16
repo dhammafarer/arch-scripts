@@ -2,11 +2,11 @@
 
 
 yay-install () {
-  yay -Syu $1 && xmonad --recompile
+  yay -Syu $@ && xmonad --recompile
 }
 
 pacman-install () {
-  sudo pacman -Syu $1 && xmonad --recompile
+  sudo pacman -Syu $@ && xmonad --recompile
 }
 
 # commands=
