@@ -7,12 +7,9 @@ echo
 PKGS=(
 
     'dunst'
-    'fzf'
     'openssh'
     'powerline-vim'
     'python-pynvim'
-    'ranger'
-    'rtv'
     'rxvt-unicode'
     'tree'
     'urxvt-perls'

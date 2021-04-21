@@ -8,6 +8,7 @@ PKGS=(
     'atool'
     'curl'
     'feh'
+    'fzf'
     'hardinfo'
     'htop'
     'kupfer'
@@ -25,6 +26,7 @@ PKGS=(
     'usbutils'
     'wget'
     'zip'
+    'xscreensaver'
 )
 
 for PKG in "${PKGS[@]}"; do

@@ -28,7 +28,7 @@ Plugin 'vim-scripts/loremipsum'
 Plugin 'dense-analysis/ale'
 Plugin 'danro/rename.vim'
 Plugin 'junegunn/fzf.vim'
-"Plugin 'https://github.com/alok/notational-fzf-vim'
+Plugin 'https://github.com/alok/notational-fzf-vim'
 "Plugin 'blindFS/vim-taskwarrior'
 "Plugin 'tbabej/taskwiki'
 Plugin 'majutsushi/tagbar'
@@ -384,8 +384,9 @@ autocmd BufWinEnter *.* silent loadview
 
 "notational fzf
 "let g:nv_search_paths = ['~/wiki', 'docs.md' , './notes.md']
+let g:nv_search_paths = ["."]
 "let g:nv_default_extension = '.wiki'
-"noremap <silent> <C-s> :NV<CR>
+noremap <silent> <C-s> :NV<CR>
 
 let maplocalleader = "\\"
 
