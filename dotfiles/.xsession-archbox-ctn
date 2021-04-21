@@ -18,7 +18,8 @@ export HUION="huion-setup-ctn"
 
 #rm ~/pyradio.log
 
+xscreensaver -no-splash &
 krita &
-signal &
+signal-desktop &
 thunderbird &
 superproductivity &

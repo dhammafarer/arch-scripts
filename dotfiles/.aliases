@@ -330,3 +330,9 @@ alias xmrr="xmonad --recompile && xmonad --restart"
 #utilities
 alias gen-pass="pwgen -ysBv 20"
 alias gen-login="pwgen -sBv 15"
+
+#radio
+alias neoradio="pyradio -p 3 -d"
+alias soma="pyradio -p 5 -d"
+alias jazzfm="pyradio -p 6 -d"
+alias chilli="pyradio -p 7 -d"
