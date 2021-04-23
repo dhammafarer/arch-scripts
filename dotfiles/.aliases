@@ -71,9 +71,9 @@ alias theme="as && vim ./dotfiles/.xres/themes/arc"
 alias cptheme="cat ~/arch-scripts/dotfiles/.xres/themes/arc | ctc"
 
 # clipboard
-alias addworkcn="cat ~/Sync/Documents/addressbook/work-zh | xclip -selection clipboard"
-alias addwork="cat ~/Sync/Documents/addressbook/work | xclip -selection clipboard"
-alias addhome="cat ~/Sync/Documents/addressbook/home | xclip -selection clipboard"
+alias addworkcn="cat ~/Nextcloud/Documents/addressbook/work-zh | xclip -selection clipboard"
+alias addwork="cat ~/Nextcloud/Documents/addressbook/work | xclip -selection clipboard"
+alias addhome="cat ~/Nextcloud/Documents/addressbook/home | xclip -selection clipboard"
 
 # directories
 alias as="cd ~/arch-scripts"
