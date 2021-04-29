@@ -199,7 +199,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_i), spawn myBrowser)
 
   -- Lock the screen using command specified by myScreensaver.
-  , ((modMask .|. controlMask .|. shiftMask, xK_l), spawn myScreensaver)
+  , ((modMask, xK_F3), spawn myScreensaver)
 
   -- Spawn the launcher using command specified by myLauncher.
   , ((modMask, xK_k), spawn myLauncher)

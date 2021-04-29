@@ -15,7 +15,7 @@ setxkbmap -option compose:caps
 xmodmap ~/arch-scripts/dotfiles/.Xmodmap-ctn
 
 export HUION="huion-setup-ctn"
-export GNUPGHOME="/mnt/black/.gnupg"
+export GNUPGHOME="/mnt/sdblack/.gnupg"
 
 #rm ~/pyradio.log
 

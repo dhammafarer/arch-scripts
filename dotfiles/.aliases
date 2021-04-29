@@ -338,12 +338,15 @@ alias jazzfm="pyradio -p 6 -d"
 alias chilli="pyradio -p 7 -d"
 
 #luks
-black-drive-mount () {
-  sudo cryptsetup luksOpen /dev/sdg1 blackdrive
-  sudo mount /dev/mapper/blackdrive /mnt/black
+sdblack-mount () {
+  sudo cryptsetup luksOpen /dev/sdf1 sdblack
+  sudo mount /dev/mapper/sdblack /mnt/sdblack
 }
 
-black-drive-umount () {
+sdblack-umount () {
   sudo umount /mnt/black
-  sudo cryptsetup luksClose blackdrive
+  sudo cryptsetup luksClose sdblack
 }
+
+alias mkeys="sdblack-mount"
+alias umkeys="sdblack-umount"
