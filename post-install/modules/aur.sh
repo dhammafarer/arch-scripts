@@ -20,6 +20,7 @@ PKGS=(
     'jmtpfs'
     'pyradio'
     'volnoti'
+    'pureref'
 )
 
 for PKG in "${PKGS[@]}"; do

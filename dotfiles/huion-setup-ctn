@@ -7,7 +7,8 @@
 list=$(xsetwacom list devices)
 stylusIDs=$(echo "${list}" | xsetwacom list devices | awk '/stylus/{print $5;}')
 
-#xrandr --output DP-5 --auto --primary --output HDMI-0 --auto --below DP-5
+xrandr --output DP-5 --auto --primary --output HDMI-0 --auto --below DP-5
+
 for id in $stylusIDs
 do
   xsetwacom --set $id MapToOutput "HEAD-1"
