@@ -344,7 +344,7 @@ sdblack-mount () {
 }
 
 sdblack-umount () {
-  sudo umount /mnt/black
+  sudo umount /mnt/sdblack
   sudo cryptsetup luksClose sdblack
 }
 
