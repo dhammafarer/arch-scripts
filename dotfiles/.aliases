@@ -339,7 +339,7 @@ alias chilli="pyradio -p 7 -d"
 
 #luks
 sdblack-mount () {
-  sudo cryptsetup luksOpen /dev/sdf1 sdblack
+  sudo cryptsetup luksOpen /dev/disk/by-uuid/e12eabad-b491-456e-a720-90a91700aa76 sdblack
   sudo mount /dev/mapper/sdblack /mnt/sdblack
 }
 
