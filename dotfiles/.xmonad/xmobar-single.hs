@@ -48,6 +48,6 @@ Config {
     sepChar = "*",
     alignSep = "}{",
     --template = "%StdinReader% }{ %multicpu%   %memory%   %eth0%    <fc=#b2b2ff>%volumelevel%</fc>   <fc=#FFFFCC>%date%</fc>"
-    --template = "*StdinReader* }{ *multicpu*   *memory*   *disku*        <fc=#5DE489>*inbox*</fc>   [ <fc=#f0c674>*next*</fc> ]    *cat0*% *count* <fc=#f0c674>*pomodoro*</fc>      <fc=#D3D7CF>*date*</fc>"
-    template = "*StdinReader* }{ *multicpu*   *memory*   *disku*       Last played: <fc=#D3D7CF>*nowplaying*</fc>   <fc=#f0c674>*pomodoro*</fc>        <fc=#D3D7CF>*date*</fc>"
+    --template = "*StdinReader* }{ *multicpu*   *memory*   *disku*       Last played: <fc=#D3D7CF>*nowplaying*</fc>   <fc=#f0c674>*pomodoro*</fc>        <fc=#D3D7CF>*date*</fc>"
+    template = "*StdinReader* }{ *multicpu*   *memory*   *disku*       <fc=#f0c674>*pomodoro*</fc>        <fc=#D3D7CF>*date*</fc>"
 }
