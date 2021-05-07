@@ -40,7 +40,7 @@ Config {
         --Run Com "/home/pawel/.xmonad/bin/getMasterVolumePercent" [] "volumelevel" 10,
         Run Com "/home/pawel/.xmonad/bin/showInboxTasks" [] "inbox" 10,
         --Run Com "/home/pawel/.xmonad/bin/activeTask" [] "active" 10,
-        Run Com "/home/pawel/.xmonad/bin/now-playing.sh" [] "nowplaying" 10,
+        --Run Com "/home/pawel/.xmonad/bin/now-playing.sh" [] "nowplaying" 10,
         Run Com "/home/pawel/.xmonad/bin/pomo.sh" ["clock"] "pomodoro" 10,
         --Run CatInt 0 "/home/pawel/.elapsed" ["-L","40","-H","80","-h","#EB484F","-l","#5DE489","-n","#f0c674"] 60,
         Run StdinReader
