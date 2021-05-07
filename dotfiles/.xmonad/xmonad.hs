@@ -198,20 +198,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Start a browser
   , ((modMask, xK_i), spawn myBrowser)
 
-  -- Lock the screen using command specified by myScreensaver.
-  , ((modMask, xK_F3), spawn myScreensaver)
-
   -- Spawn the launcher using command specified by myLauncher.
   , ((modMask, xK_k), spawn myLauncher)
-
-  -- Take a selective screenshot using the command specified by mySelectScreenshot.
-  , ((modMask .|. controlMask .|. shiftMask, xK_i), spawn myDelayedScreenshot)
-
-  -- Take a selective screenshot using the command specified by mySelectScreenshot.
-  , ((modMask, xK_F1), spawn myScreenshot)
-
-  -- Take a full screenshot using the command specified by myScreenshot.
-  , ((modMask, xK_F4), spawn mySelectScreenshot)
 
   -- Mute volume.
   , ((0, xF86XK_AudioMute), spawn "amixer -q set Master toggle ")
@@ -231,14 +219,27 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Increase volume.
   --, ((modMask .|. controlMask, xK_m), spawn "amixer -q set Master 5%+")
 
-  -- Start pomodoro
-  -- , ((modMask, xK_F5), spawn "/home/pawel/.xmonad/bin/pomo.sh start")
-
-  -- Finish pomodoro
-  -- , ((modMask, xK_F4), spawn "/home/pawel/.xmonad/bin/pomo.sh stop")
-
   -- Run Huion setup
   , ((modMask, xK_F10), spawn "~/arch-scripts/dotfiles/$HUION")
+
+  -- Finish pomodoro
+  , ((modMask, xK_F1), spawn "/home/pawel/.xmonad/bin/pomo.sh stop")
+
+  -- Start pomodoro
+  , ((modMask, xK_F2), spawn "/home/pawel/.xmonad/bin/pomo.sh start")
+
+  -- Lock the screen using command specified by myScreensaver.
+  , ((modMask, xK_F3), spawn myScreensaver)
+
+  -- Take a full screenshot using the command specified by myScreenshot.
+  , ((modMask, xK_F4), spawn mySelectScreenshot)
+
+  -- Take a selective screenshot using the command specified by mySelectScreenshot.
+  , ((modMask .|. controlMask .|. shiftMask, xK_i), spawn myDelayedScreenshot)
+
+  -- Take a selective screenshot using the command specified by mySelectScreenshot.
+  -- , ((modMask, xK_F1), spawn myScreenshot)
+
 
   -- Audio previous.
   , ((0, 0x1008FF16), spawn "")
