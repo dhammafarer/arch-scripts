@@ -354,6 +354,6 @@ alias umkeys="sdblack-umount"
 #clipboard
 pcsm () {
   ssh -p "8022" u0_a144@192.168.0.166 termux-clipboard-set $1
-  sleep 5
+  sleep 20
   ssh -p "8022" u0_a144@192.168.0.166 termux-clipboard-set ""
 }
