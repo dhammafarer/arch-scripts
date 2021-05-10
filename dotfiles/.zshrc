@@ -68,6 +68,7 @@ plugins=(zsh-autosuggestions git pass taskwarrior)
 # User configuration
 
 #export PATH=":/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/pawel/.rvm/bin:/home/pawel/.rvm/bin:/home/pawel/.composer/vendor/bin:/home/pawel/.local/bin/:/home/pawel/.npm-global/bin/:/home/pawel/.xmonad/bin"
+export PATH=":/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/pawel/.local/bin/:/home/pawel/.npm-global/bin/:/home/pawel/.xmonad/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

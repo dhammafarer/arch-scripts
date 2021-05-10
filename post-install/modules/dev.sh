@@ -34,6 +34,12 @@ echo "Increasing file watcher count"
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 
 # ------------------------------------------------------------------------
+echo "INSTALLING GLOBAL NPM MODULUES"
+ln -fs /home/pawel/arch-scripts/dotfiles/.noderc ~
+
+npm install -g gatsby-cli typescript prettier
+
+# ------------------------------------------------------------------------
 
 echo
 echo "Done!"
