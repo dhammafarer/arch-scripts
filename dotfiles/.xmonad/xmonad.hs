@@ -242,13 +242,16 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
 
   -- Audio previous.
-  , ((0, 0x1008FF16), spawn "")
+  --, ((0, 0x1008FF16), spawn "")
+  , ((0, xF86XK_AudioPrev), spawn "cmus-remote --prev")
 
   -- Play/pause.
-  , ((0, 0x1008FF14), spawn "")
+  --, ((0, 0x1008FF13), spawn "cmus-remote --pause")
+  , ((0, xK_Pause), spawn "cmus-remote --pause")
 
   -- Audio next.
-  , ((0, 0x1008FF17), spawn "")
+  --, ((0, 0x1008FF17), spawn "")
+  , ((0, xF86XK_AudioNext), spawn "cmus-remote --next")
 
   -- Eject CD tray.
   , ((0, 0x1008FF2C), spawn "eject -T")
