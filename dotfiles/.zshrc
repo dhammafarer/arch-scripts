@@ -267,3 +267,8 @@ wdv () {
   google-chrome-stable --new-window http://localhost:8000
   google-chrome-stable --new-window http://localhost:8000
 }
+
+# ssh authentication with gpg
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
