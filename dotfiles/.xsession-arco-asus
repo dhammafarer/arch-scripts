@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#
+# ~/.xsession
+#
+# Executed by xdm/gdm/kdm at login
+#
+setxkbmap -option compose:caps
+
+#export QT_ENABLE_HIGHDPI_SCALING=0
+export HUION="huion-setup-asus"
