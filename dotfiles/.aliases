@@ -357,3 +357,8 @@ pcsm () {
   sleep 20
   ssh -p "8022" u0_a144@192.168.0.166 termux-clipboard-set ""
 }
+
+restart-pcscd () {
+  sudo systemctl stop pcscd.socket
+  sudo systemctl start pcscd.socket
+}
