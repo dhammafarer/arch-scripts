@@ -21,6 +21,7 @@ alias yays="yay-install"
 alias syays="yay -Ss"
 alias sn="shutdown-sequence"
 alias xmp="xmodmap ~/.Xmodmap"
+alias cbi="xclip -selection clipboard -t image/png -o > /tmp/\"$(date +%Y-%m-%d_%T).png\""
 
 #system
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
