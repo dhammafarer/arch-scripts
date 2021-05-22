@@ -363,3 +363,4 @@ restart-pcscd () {
   sudo systemctl stop pcscd.socket
   sudo systemctl start pcscd.socket
 }
+alias mtmedia="sshfs ubuntu@klaasje.ddns.net:/mnt/external/data/media ~/mnt/media -C -p 437"
