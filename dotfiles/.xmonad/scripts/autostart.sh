@@ -29,6 +29,7 @@ run picom --config $HOME/.xmonad/scripts/picom.conf &
 
 run volnoti -t 1 &
 run kupfer --no-splash &
+run xscreensaver -no-splash &
 run nextcloud &
 run goldendict &
 #ibus-daemon -drx &
