@@ -22,7 +22,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'vimwiki/vimwiki', {'pinned': 1}
+"Plugin 'vimwiki/vimwiki', {'pinned': 1}
+Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
 Plugin 'vim-scripts/loremipsum'
 Plugin 'dense-analysis/ale'
@@ -200,9 +201,9 @@ command! H let @/="" 				                  "Remove search results
 "----------VimWiki----------"
 
 let wiki_1 = {}
-let wiki_1.path = '$HOME/wiki'
-"let wiki_1.syntax = 'markdown'
-"let wiki_1.ext = '.md'
+let wiki_1.path = '$HOME/Nextcloud/Documents/Notes'
+let wiki_1.syntax = 'markdown'
+let wiki_1.ext = '.md'
 
 "let wiki_2 = {}
 "let wiki_2.name = 'personal'
