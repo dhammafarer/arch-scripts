@@ -364,3 +364,6 @@ restart-pcscd () {
   sudo systemctl start pcscd.socket
 }
 alias mtmedia="sshfs ubuntu@klaasje.ddns.net:/mnt/external/data/media ~/mnt/media -C -p 437"
+
+# anki
+alias anki-vim="anki-vim -e vim --deckpath /home/pawel/Nextcloud/AppData/anki"
