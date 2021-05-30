@@ -1,4 +1,6 @@
 #!/bin/bash
 
+xrandr --output HDMI-A-0 --auto --primary --output DisplayPort-0 --auto --below HDMI-A-0
+
 xsetwacom --set "Tablet Monitor Pen stylus" MapToOutput "DisplayPort-0"
 xsetwacom set "Tablet Monitor Pen stylus" Button 2 "key +space"
