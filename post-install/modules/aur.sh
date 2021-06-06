@@ -6,14 +6,14 @@ echo
 
 # ------------------------------------------------------------------------
 
-cd "${HOME}"
+#cd "${HOME}"
 
-echo "CLONING: YAY"
-git clone https://aur.archlinux.org/yay.git
+#echo "CLONING: YAY"
+#git clone https://aur.archlinux.org/yay.git
 
-cd ${HOME}/yay
-makepkg -si
-cd "${HOME}" && rm -rf ${HOME}/yay
+#cd ${HOME}/yay
+#makepkg -si
+#cd "${HOME}" && rm -rf ${HOME}/yay
 
 PKGS=(
 
