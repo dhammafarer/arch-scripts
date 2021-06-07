@@ -32,7 +32,6 @@ run kupfer --no-splash &
 run xscreensaver -no-splash &
 run nextcloud &
 run goldendict &
-#ibus-daemon -drx &
 run fcitx5 &
 feh --bg-fill $HOME/.background-image &
 
