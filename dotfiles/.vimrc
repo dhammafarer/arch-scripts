@@ -76,7 +76,7 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'luochen1990/rainbow'
-
+Plugin 'skywind3000/asyncrun.vim'
 " python
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
@@ -394,3 +394,7 @@ let maplocalleader = "\\"
 " change current word (like ciw) but repeatable with dot . for the same next
 " word
 nnoremap <silent> <C-n> :let @/=expand('<cword>')<cr>cgn
+
+" Goldendict
+:nmap <silent> <F1> :AsyncRun goldendict <cword><CR>
+:vmap <silent> <F1> y :AsyncRun goldendict "<C-R>""<CR>
