@@ -261,6 +261,9 @@ alias sbx="cd ~/Code/react/sandbox && gvv"
 alias gatdev="gatsby develop"
 alias gatcc="rm -rf .cache"
 
+#dev
+alias gin="echo 'node_modules\n.env' > .gitignore"
+
 #react
 alias npm-react="ns-react && ns-redux && nsd-webpack && nsd-babel && nsd-loaders && nsd-test && nsd-lint && nsd-tools"
 alias ns-react="ns react react-dom react-router"
