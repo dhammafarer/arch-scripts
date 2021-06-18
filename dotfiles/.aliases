@@ -263,6 +263,7 @@ alias gatcc="rm -rf .cache"
 
 #dev
 alias gin="echo 'node_modules\n.env' > .gitignore"
+alias jsconf='echo "{ \"compilerOptions\": { \"checkJs\": true } }" > jsconfig.json'
 
 #react
 alias npm-react="ns-react && ns-redux && nsd-webpack && nsd-babel && nsd-loaders && nsd-test && nsd-lint && nsd-tools"

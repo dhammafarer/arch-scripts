@@ -47,7 +47,6 @@ Plugin 'roxma/nvim-yarp'
 Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'Valloric/ListToggle'
 Plugin 'SirVer/ultisnips'
-Plugin 'https://github.com/ternjs/tern_for_vim.git'
 
 " git
 "Plugin 'tpope/vim-fugitive'
@@ -66,10 +65,11 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
 
 " haskell
-"Plugin 'neovimhaskell/haskell-vim'
-"Plugin 'Shougo/vimproc.vim'
-"Plugin 'eagletmt/neco-ghc'
-"Plugin 'eagletmt/ghcmod-vim'
+Plugin 'neovimhaskell/haskell-vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'alx741/vim-stylishask'
+Plugin 'itchyny/vim-haskell-indent'
 
 
 "" word processing
@@ -268,7 +268,7 @@ let g:user_emmet_settings={'javascript.jsx': {'extends':'jsx'}}
 " Asynchronous Lint Engine (ALE)
 " Limit linters used for JavaScript.
 let g:ale_linters = {
-\  'javascript': ['eslint'],
+\  'javascript': ['eslint', 'tsserver'],
 \  'typescript': ['tsserver', 'eslint'],
 \  'python': ['flake8', 'pylint']
 \}
@@ -286,11 +286,16 @@ set omnifunc=syntaxcomplete#Complete
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
+"## HASKELL
 " neco-ghc
-let g:ycm_semantic_triggers = {'haskell' : ['.'], 'elm': ['.']}
+"let g:ycm_semantic_triggers = {'haskell' : ['.'], 'elm': ['.']}
 let g:haskellmode_completion_ghc = 1
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 let g:necoghc_enable_detailed_browse = 1
+let g:haskell_classic_highlighting = 1
+
+
+"## END-HASKELL
 
 " file navigation
 "nnoremap <Leader>c :e *.cabal<CR>
