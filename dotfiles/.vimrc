@@ -304,10 +304,10 @@ nnoremap <Leader>wc :e webpack.config.js<CR>
 nnoremap <Leader>gc :e gatsby-config.js<CR>
 nnoremap <Leader>gn :e gatsby-node.js<CR>
 
-map <silent> tw :GhcModTypeInsert<CR>
-map <silent> ts :GhcModSplitFunCase<CR>
-map <silent> tq :GhcModType<CR>
-map <silent> te :GhcModTypeClear<CR>
+"map <silent> tw :GhcModTypeInsert<CR>
+"map <silent> ts :GhcModSplitFunCase<CR>
+"map <silent> tq :GhcModType<CR>
+"map <silent> te :GhcModTypeClear<CR>
 
 " typescript
 "autocmd FileType typescript setlocal completeopt-=menu
