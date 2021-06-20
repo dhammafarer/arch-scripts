@@ -61,15 +61,15 @@ alias s=start-task
 
 # files
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias aliases="vim ./dotfiles/.aliases"
-alias xres="vim ./dotfiles/.Xresources"
-alias zshrc="vim ./dotfiles/.zshrc"
+alias aliases="vim ./.aliases"
+alias xres="vim ./.Xresources"
+alias zshrc="vim ./.zshrc"
 alias history="vim ~/.zsh_history"
-alias vimrc="vim ./dotfiles/.vimrc"
-alias gvimrc="im ./dotfiles/.gvimrc"
+alias vimrc="vim ./.vimrc"
+alias gvimrc="im ./.gvimrc"
 alias diary='/usr/bin/gvim -geometry 80x10+600+400 -c "VimwikiMakeDiaryNote" + -c "DiaryTime"'
 alias xmrc="cd ~/arch-scripts/dotfiles/.xmonad && vim ./xmonad.hs"
-alias theme="vim ./dotfiles/.xres/themes/arc"
+alias theme="vim ./.xres/themes/arc"
 alias cptheme="cat ~/arch-scripts/dotfiles/.xres/themes/arc | ctc"
 
 # clipboard
@@ -102,7 +102,7 @@ alias ramda="~/scripts/vendor/ramda.sh"
 alias blendproject="~/scripts/misc/blender-project.sh"
 
 youtube-dl-mp3() {
-    youtube-dl --extract-audio --audio-format mp3 --output "~/Nextcloud/Music/transcribe/%(title)s.%(ext)s" $1
+    youtube-dl --extract-audio --audio-format mp3 --output "~/Nextcloud/Media/Music/transcribe/%(title)s.%(ext)s" $1
 }
 
 alias ytmp3=youtube-dl-mp3

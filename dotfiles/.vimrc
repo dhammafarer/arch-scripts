@@ -373,6 +373,10 @@ highlight ALEWarning ctermfg=0 ctermbg=11
 highlight ALEError ctermfg=15 ctermbg=9
 
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#max_menu_width = 0
+call deoplete#custom#source('ghc',  'max_menu_width', 0)
+call deoplete#custom#source('ghc',  'max_abbr_width', 0)
+call deoplete#custom#source('ghc',  'max_kind_width', 0)
 
 "folding
 set foldmethod=indent
