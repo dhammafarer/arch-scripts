@@ -42,11 +42,12 @@ Plugin 'jceb/vim-orgmode'
 " autocompletion
 Plugin 'ervandew/supertab'
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'Shougo/deoplete.nvim'
+"Plugin 'Shougo/deoplete.nvim'
 Plugin 'roxma/nvim-yarp'
 Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'Valloric/ListToggle'
 Plugin 'SirVer/ultisnips'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 " git
 "Plugin 'tpope/vim-fugitive'
@@ -71,6 +72,9 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'alx741/vim-stylishask'
 Plugin 'itchyny/vim-haskell-indent'
 
+" purescript
+Plugin 'purescript-contrib/purescript-vim'
+Plugin 'FrigoEU/psc-ide-vim'
 
 "" word processing
 Plugin 'vim-pandoc/vim-pandoc'
@@ -372,11 +376,11 @@ hi LineNr ctermfg=8
 highlight ALEWarning ctermfg=0 ctermbg=11
 highlight ALEError ctermfg=15 ctermbg=9
 
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#max_menu_width = 0
-call deoplete#custom#source('ghc',  'max_menu_width', 0)
-call deoplete#custom#source('ghc',  'max_abbr_width', 0)
-call deoplete#custom#source('ghc',  'max_kind_width', 0)
+"let g:deoplete#enable_at_startup = 1
+"let g:deoplete#max_menu_width = 0
+"call deoplete#custom#source('ghc',  'max_menu_width', 0)
+"call deoplete#custom#source('ghc',  'max_abbr_width', 0)
+"call deoplete#custom#source('ghc',  'max_kind_width', 0)
 
 "folding
 set foldmethod=indent
@@ -407,3 +411,9 @@ nnoremap <silent> <C-n> :let @/=expand('<cword>')<cr>cgn
 " Goldendict
 :nmap <silent> <F1> :AsyncRun goldendict <cword><CR>
 :vmap <silent> <F1> y :AsyncRun goldendict "<C-R>""<CR>
+
+" Pmenu colors
+hi Pmenu ctermfg=15 ctermbg=235 guibg=#d7e5dc gui=NONE
+hi PmenuSel ctermfg=0 ctermbg=13 guibg=#d7e5dc gui=NONE
+hi PmenuSbar ctermfg=0 ctermbg=232 guibg=#d7e5dc gui=NONE
+hi PmenuThumb ctermfg=0 ctermbg=238 guibg=#d7e5dc gui=NONE

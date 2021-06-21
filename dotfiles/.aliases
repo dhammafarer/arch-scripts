@@ -61,15 +61,15 @@ alias s=start-task
 
 # files
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias aliases="vim ./.aliases"
-alias xres="vim ./.Xresources"
-alias zshrc="vim ./.zshrc"
+alias aliases="vim ~/.aliases"
+alias xres="vim ~/.Xresources"
+alias zshrc="vim ~/.zshrc"
 alias history="vim ~/.zsh_history"
-alias vimrc="vim ./.vimrc"
-alias gvimrc="im ./.gvimrc"
+alias vimrc="vim ~/.vimrc"
+alias gvimrc="im ~/.gvimrc"
 alias diary='/usr/bin/gvim -geometry 80x10+600+400 -c "VimwikiMakeDiaryNote" + -c "DiaryTime"'
 alias xmrc="cd ~/arch-scripts/dotfiles/.xmonad && vim ./xmonad.hs"
-alias theme="vim ./.xres/themes/arc"
+alias theme="vim ~/.xres/themes/arc"
 alias cptheme="cat ~/arch-scripts/dotfiles/.xres/themes/arc | ctc"
 
 # clipboard
