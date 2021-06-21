@@ -417,3 +417,5 @@ hi Pmenu ctermfg=15 ctermbg=235 guibg=#d7e5dc gui=NONE
 hi PmenuSel ctermfg=0 ctermbg=13 guibg=#d7e5dc gui=NONE
 hi PmenuSbar ctermfg=0 ctermbg=232 guibg=#d7e5dc gui=NONE
 hi PmenuThumb ctermfg=0 ctermbg=238 guibg=#d7e5dc gui=NONE
+
+let g:psc_ide_log_level = 3

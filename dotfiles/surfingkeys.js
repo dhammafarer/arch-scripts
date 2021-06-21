@@ -42,65 +42,70 @@ const searchEngines = [
     key: "g",
     name: "Google",
     url: "https://google.com/search?q=",
-    fn: null
+    fn: null,
   },
   {
     key: "h",
     name: "Hackage",
     url: "https://www.haskell.org/hoogle/?hoogle=",
-    fn: null
+    fn: null,
+  },
+  {
+    key: "p",
+    name: "Pursuit",
+    url: "https://pursuit.purescript.org/search?q=",
+    fn: null,
   },
   {
     key: "l",
     name: "Libgen",
     url: "https://libgen.is/search.php?req=",
-    fn: null
+    fn: null,
   },
   {
     key: "d",
     name: "DuckDuckGo",
     url: "https://duckduckgo.com/?q=",
-    fn: null
+    fn: null,
   },
   {
     key: "y",
     name: "youtube",
     url: "https://www.youtube.com/results?search_query=",
-    fn: function(response) {
+    fn: function (response) {
       var res = JSON.parse(response.text);
       return res[1];
-    }
+    },
   },
   {
     key: "w",
     name: "Wikipedia",
     url: "https://en.wikipedia.org/wiki/",
-    fn: null
+    fn: null,
   },
   {
     key: "r",
     name: "Reddit",
     url: "https://www.google.com/search?q=site%3Areddit.com+",
-    fn: null
+    fn: null,
   },
   {
     key: "t",
     name: "Google Translate",
-    url:
-      "https://translate.google.com/?hl=en&tab=TT#view=home&op=translate&sl=auto&tl=en&text=",
-    fn: null
-  }
+    url: "https://translate.google.com/?hl=en&tab=TT#view=home&op=translate&sl=auto&tl=en&text=",
+    fn: null,
+  },
 ];
 
-searchEngines.forEach(x => {
+searchEngines.forEach((x) => {
   addSearchAliasX(x.key, x.name, x.url, "s", x.fn);
 
-  mapkey(`o${x.key}`, `Search with ${x.name}`, function() {
+  mapkey(`o${x.key}`, `Search with ${x.name}`, function () {
     Front.openOmnibar({ type: "SearchEngine", extra: x.key });
   });
 });
 
 // youtube full screen
-mapkey(`F`, `Toglle fullscreen`, function() {
+mapkey(`F`, `Toglle fullscreen`, function () {
   document.querySelector(".fullscreen-icon").click();
 });
