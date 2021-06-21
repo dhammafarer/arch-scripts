@@ -1,28 +1,28 @@
-import System.IO
-import System.Exit
-import XMonad hiding ( (|||) )
-import XMonad.Actions.CycleWS
-import XMonad.Layout.LayoutCombinators
-import XMonad.Hooks.DynamicLog
-import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.ManageHelpers
-import XMonad.Hooks.SetWMName
-import XMonad.Layout.Fullscreen
-import XMonad.Layout.Gaps
-import XMonad.Layout.NoBorders
-import XMonad.Layout.Spacing
-import XMonad.Layout.Spiral
-import XMonad.Layout.Tabbed
-import XMonad.Layout.ThreeColumns
-import XMonad.Layout.TwoPane
-import XMonad.Layout.PerWorkspace
-import XMonad.Util.Run(spawnPipe)
-import XMonad.Util.EZConfig(additionalKeys)
-import Graphics.X11.ExtraTypes.XF86
-import qualified XMonad.StackSet as W
-import qualified Data.Map        as M
-import XMonad.Actions.PhysicalScreens
-import Data.Default
+import           Data.Default
+import qualified Data.Map                        as M
+import           Graphics.X11.ExtraTypes.XF86
+import           System.Exit
+import           System.IO
+import           XMonad                          hiding ((|||))
+import           XMonad.Actions.CycleWS
+import           XMonad.Actions.PhysicalScreens
+import           XMonad.Hooks.DynamicLog
+import           XMonad.Hooks.ManageDocks
+import           XMonad.Hooks.ManageHelpers
+import           XMonad.Hooks.SetWMName
+import           XMonad.Layout.Fullscreen
+import           XMonad.Layout.Gaps
+import           XMonad.Layout.LayoutCombinators
+import           XMonad.Layout.NoBorders
+import           XMonad.Layout.PerWorkspace
+import           XMonad.Layout.Spacing
+import           XMonad.Layout.Spiral
+import           XMonad.Layout.Tabbed
+import           XMonad.Layout.ThreeColumns
+import           XMonad.Layout.TwoPane
+import qualified XMonad.StackSet                 as W
+import           XMonad.Util.EZConfig            (additionalKeys)
+import           XMonad.Util.Run                 (spawnPipe)
 
 
 ------------------------------------------------------------------------
@@ -30,7 +30,7 @@ import Data.Default
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal = "urxvt"
+myTerminal = "urxvt -fn 'xft:Fira Code:style=Regular:size=14,xft:DejaVu Sans Mono:style=Book:size=14,xft:Noto Sans CJK TC Medium:style=Medium,xft:DejaVu Sans:style=Medium,xft:Noto Emoji-14'"
 
 myBrowser = "firefox"
 
