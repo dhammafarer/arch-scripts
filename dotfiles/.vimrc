@@ -1,6 +1,5 @@
 "--------------Vundle-----------------"
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
 " Get the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -86,7 +85,9 @@ Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
 
 call vundle#end()            " required
-filetype plugin indent on    " required
+syntax on
+filetype on
+filetype plugin indent on
 
 " Brief help
 " :PluginList       - lists configured plugins
@@ -96,7 +97,6 @@ filetype plugin indent on    " required
 "-----------Vundle---END--------------"
 
 "------------Settings-----------------"
-syntax enable
 set t_Co=16
 set guioptions-=T                               "Removse top toolbar
 set guioptions-=r                               "Removes right hand scroll bar
