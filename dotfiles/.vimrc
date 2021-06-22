@@ -138,10 +138,6 @@ nmap <leader>w :w!<cr>				"fast saves
 nmap <leader>x :q<cr>				  "fast quit
 nmap <leader>s :saveas		    "save as
 
-nmap <leader><leader>n :!node %<cr>
-nmap <leader><leader>r :!ruby %<cr>
-nmap <leader><leader>e :!elixir %<cr>
-
 nmap <leader><esc> :nohlsearch<cr>
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR> 		"Auto change directory to match current file ,cd
 "nmap <C-v> :vertical resize +5<cr>
@@ -419,3 +415,6 @@ hi PmenuSbar ctermfg=0 ctermbg=232 guibg=#d7e5dc gui=NONE
 hi PmenuThumb ctermfg=0 ctermbg=238 guibg=#d7e5dc gui=NONE
 
 let g:psc_ide_log_level = 3
+
+noremap <leader><leader>e :CocDiagnostics<CR>
+
