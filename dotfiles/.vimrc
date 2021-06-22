@@ -414,7 +414,16 @@ hi PmenuSel ctermfg=0 ctermbg=13 guibg=#d7e5dc gui=NONE
 hi PmenuSbar ctermfg=0 ctermbg=232 guibg=#d7e5dc gui=NONE
 hi PmenuThumb ctermfg=0 ctermbg=238 guibg=#d7e5dc gui=NONE
 
-let g:psc_ide_log_level = 3
-
 noremap <leader><leader>e :CocDiagnostics<CR>
+noremap <leader><leader>n <Plug>coc-diagnostic-next-error
 
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [- <Plug>(coc-diagnostic-prev)
+nmap <silent> ]> <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
