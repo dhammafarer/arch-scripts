@@ -9,6 +9,8 @@ call vundle#begin()
 Plugin 'mhartington/oceanic-next'
 Plugin 'arcticicestudio/nord-vim'
 " Base plugins
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'jonathanfilip/vim-lucius'
@@ -49,7 +51,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 " git
-"Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 "html
 Plugin 'mattn/emmet-vim'
@@ -126,7 +128,6 @@ set mouse=a
 set iskeyword-=_
 set modifiable
 set clipboard=unnamed
-"set guifont=Fira\ Code\ for\ Powerline\ 12
 set linespace=7
 set updatetime=100
 "---------Settings---END--------------"
@@ -168,11 +169,11 @@ nmap <C-u> :Marks<cr>
 "-------------fzf---END-------------"
 
 "-----------Powerline-----------------"
-let g:powerline_pycmd = 'py3'
-let g:Powerline_symbols = 'fancy'
-set laststatus=2   				"Always show the statusline
-set encoding=utf-8 				"Necessary to show Unicode glyphs
-set noshowmode 					"Hide the default mode text (e.g. -- INSERT -- below the statusline)
+"let g:powerline_pycmd = 'py3'
+"let g:Powerline_symbols = 'fancy'
+"set laststatus=2   				"Always show the statusline
+"set encoding=utf-8 				"Necessary to show Unicode glyphs
+"set noshowmode 					"Hide the default mode text (e.g. -- INSERT -- below the statusline)
 "--------Powerline---END--------------"
 
 "-----------UltiSnips-----------------"
@@ -427,3 +428,27 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" eleline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='minimalist'
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.colnr = '㏇:'
