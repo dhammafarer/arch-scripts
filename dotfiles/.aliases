@@ -282,6 +282,12 @@ alias sr="stack repl"
 alias sg="stack ghci"
 alias se="stack exec"
 
+## spago
+alias spb="spago build"
+alias spi="spago init"
+alias spr="spago repl"
+alias spt="spago test"
+
 #curl
 alias cpost="curl-post-json"
 

@@ -229,19 +229,6 @@ set thesaurus+=~/Dropbox/Config/mthesaur.txt
 let g:vroom_use_colors = 1
 "------------Misc---END---------------"
 
-"----------------Tabs-----------------"
-noremap <leader>1 1gt
-noremap <leader>2 2gt
-noremap <leader>3 3gt
-noremap <leader>4 4gt
-noremap <leader>5 5gt
-noremap <leader>6 6gt
-noremap <leader>7 7gt
-noremap <leader>8 8gt
-noremap <leader>9 9gt
-noremap <leader>0 :tablast<cr>
-"--------------Tabs---END-------------"
-
 " Create/edit file in the current directory
 "nmap <leader>e :edit %:p:h/
 
@@ -415,13 +402,11 @@ hi PmenuSel ctermfg=0 ctermbg=13 guibg=#d7e5dc gui=NONE
 hi PmenuSbar ctermfg=0 ctermbg=232 guibg=#d7e5dc gui=NONE
 hi PmenuThumb ctermfg=0 ctermbg=238 guibg=#d7e5dc gui=NONE
 
-noremap <leader><leader>e :CocDiagnostics<CR>
-noremap <leader><leader>n <Plug>coc-diagnostic-next-error
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
 nmap <silent> [- <Plug>(coc-diagnostic-prev)
-nmap <silent> ]> <Plug>(coc-diagnostic-next)
+nmap <silent><leader>e <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -429,12 +414,11 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" eleline
-let g:airline_powerline_fonts = 1
-let g:airline_theme='minimalist'
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
 " air-line
+let g:airline_powerline_fonts = 1
+let g:airline_theme='monochrome'
+
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
@@ -452,3 +436,24 @@ endif
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_symbols.colnr = '㏇:'
+
+"----------------Tabs-----------------"
+map <leader>tn :tabnew<cr>
+map <leader>d :tabnext<cr>
+map <leader>c :tabprevious<cr>
+map <leader>to :tabonly<cr>
+
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
+"--------------Tabs---END-------------"
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'default'
