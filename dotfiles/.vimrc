@@ -459,9 +459,10 @@ noremap <leader>0 :tablast<cr>
 let g:airline#extensions#tabline#formatter = 'default'
 
 " tabline
-:hi TabLineFill ctermfg=0 ctermbg=8
-:hi TabLine ctermfg=8 ctermbg=0
-:hi TabLineSel ctermfg=15 ctermbg=0
+:hi TabLineFill ctermfg=0 ctermbg=240
+:hi TabLine ctermfg=242 ctermbg=0 cterm=none
+:hi TabLineSel ctermfg=250 ctermbg=0
+:hi Title ctermfg=250 ctermbg=0
 
 "set signcolumn=number
 highlight SignColumn      ctermfg=7 ctermbg=0
