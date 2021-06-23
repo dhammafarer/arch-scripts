@@ -455,5 +455,16 @@ noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 "--------------Tabs---END-------------"
 
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
+
+" tabline
+:hi TabLineFill ctermfg=0 ctermbg=8
+:hi TabLine ctermfg=8 ctermbg=0
+:hi TabLineSel ctermfg=15 ctermbg=0
+
+"set signcolumn=number
+highlight SignColumn      ctermfg=7 ctermbg=0
+highlight GitGutterAdd    ctermfg=2 ctermbg=0
+highlight GitGutterChange ctermfg=3 ctermbg=0
+highlight GitGutterDelete ctermfg=1 ctermbg=0
