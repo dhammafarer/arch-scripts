@@ -1,0 +1,8 @@
+1. Boot into recovery:
+    Volume Up + Power
+
+2. Sideload zip
+    adb sideload filename.zip
+
+3. Patch and flash recovery:
+    fastboot flash recovery <recovery_filename>.img

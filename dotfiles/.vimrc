@@ -464,7 +464,7 @@ let g:airline#extensions#tabline#formatter = 'default'
 :hi TabLineSel ctermfg=250 ctermbg=0
 :hi Title ctermfg=250 ctermbg=0
 
-"set signcolumn=number
+set signcolumn=number
 highlight SignColumn      ctermfg=7 ctermbg=0
 highlight GitGutterAdd    ctermfg=2 ctermbg=0
 highlight GitGutterChange ctermfg=3 ctermbg=0
