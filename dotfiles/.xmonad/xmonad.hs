@@ -61,8 +61,8 @@ mySpacing = spacingRaw True (Border 0 10 10 10) True (Border 10 10 10 10) True
 one   = "\xf120"
 two   = "\xf109"
 three = "\xf4ad"
-four  = "\xf1b2"
-five  = "\xf87c"
+four  = "\xf87c"
+five  = "\xf1b2"
 six   = "\xf17a"
 seven = "\xf268"
 
@@ -90,13 +90,13 @@ myManageHook = composeAll
     , className =? "discord"            --> doShift three
     , className =? "Signal"             --> doShift three
     , className =? "Gimp"               --> doShift four
-    , className =? "Blender"            --> doShift four
-    --, className =? "vlc"                --> doShift five
-    --, className =? "mpv"                --> doShift five
-    --, className =? "smplayer"           --> doShift five
+    , className =? "Blender"            --> doShift five
+    --, className =? "vlc"                --> doShift four
+    --, className =? "mpv"                --> doShift four
+    --, className =? "smplayer"           --> doShift four
     , className =? "Emacs"              --> doShift five
     , className =? "superProductivity"  --> doShift six
-    , className =? "libreoffice-writer" --> doShift four
+    , className =? "libreoffice-writer" --> doShift five
     , resource  =? "gpicview"           --> doFloat
     , className =? "MPlayer"            --> doFloat
     , className =? "VirtualBox Manager" --> doShift six
@@ -150,8 +150,8 @@ fsf= noBorders (fullscreenFull Full)
 myLayout = onWorkspace one gft
            $ onWorkspace two fsf
            $ onWorkspace three gt2f
-           $ onWorkspace four ft
-           $ onWorkspace five fsf
+           $ onWorkspace four fsf
+           $ onWorkspace five ft
            $ onWorkspace six fsf
            $ onWorkspace seven gft
            l0
