@@ -416,7 +416,7 @@ nmap <silent> gr <Plug>(coc-references)
 
 " air-line
 let g:airline_powerline_fonts = 1
-let g:airline_theme='monochrome'
+let g:airline_theme='minimalist'
 
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:airline_powerline_fonts = 1
