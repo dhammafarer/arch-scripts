@@ -33,6 +33,7 @@ import           XMonad.Util.Run                 (spawnPipe)
 myTerminal = "urxvt -fn 'xft:Fira Code:style=Regular:size=14,xft:DejaVu Sans Mono:style=Book:size=14,xft:Noto Sans CJK TC Medium:style=Medium,xft:DejaVu Sans:style=Medium,xft:Noto Emoji-14'"
 
 myBrowser = "firefox"
+myBrowserPrivate = "firefox --private-window"
 
 -- The command to lock the screen or show the screensaver.
 myScreensaver = "/usr/bin/xscreensaver-command -l"
@@ -197,6 +198,9 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- Start a browser
   , ((modMask, xK_i), spawn myBrowser)
+
+  -- Start a browser in private winow
+  , ((modMask .|. controlMask, xK_i), spawn myBrowserPrivate)
 
   -- Spawn the launcher using command specified by myLauncher.
   , ((modMask, xK_k), spawn myLauncher)
